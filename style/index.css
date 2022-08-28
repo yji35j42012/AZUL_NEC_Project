@@ -45,7 +45,6 @@ h2 {
   width: 100%;
   height: 100%;
   padding-top: 160px;
-  background: linear-gradient(157deg, #05097b 20%, #93d1ab);
   text-align: center;
 }
 .opening img {
@@ -64,7 +63,6 @@ h2 {
   height: 100%;
   padding-top: 26px;
   padding-bottom: 70px;
-  background: linear-gradient(157deg, #05097b 20%, #93d1ab);
 }
 .step_txt {
   margin-top: 15px;

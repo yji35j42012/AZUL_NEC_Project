@@ -53,6 +53,10 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+body {
+    background: linear-gradient(157deg, #05097b 20%, #93d1ab);
+}
+
 *:hover,
 *:focus,
 *:active {
