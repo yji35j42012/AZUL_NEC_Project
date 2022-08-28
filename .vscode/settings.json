@@ -1,0 +1,10 @@
+{
+    //css產出設定
+    "liveSassCompile.settings.formats": [
+        {
+            "extensionName": ".css", //正式版副檔名為min.css
+            "format": "expanded", //壓縮成一行css，正式版本
+            "savePath": "~../style" //放在公司專用style
+        }
+    ],
+}
