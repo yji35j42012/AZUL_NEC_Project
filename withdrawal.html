@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
 	<div class="wrap">
 		<div class="home member">
 			<div class="normal_title">選擇提款金額</div>
@@ -29,35 +28,39 @@
 			</div>
 		</div>
 		<div class="main">
-			<!-- <ul class="serve">
-				<li class="serve_list">
-					<i class="serve_list_icon">
-						<img src="./images/icon_withdraw.svg" alt="">
-					</i>
-					<span class="serve_list_txt">預填單 / 提款</span>
-				</li>
-				<li class="serve_list">
-					<i class="serve_list_icon">
-						<img src="./images/icon_form.svg" alt="">
-					</i>
-					<span class="serve_list_txt">預填單 / 帳戶升級</span>
-				</li>
-				<li class="serve_list">
-					<i class="serve_list_icon">
-						<img src="./images/icon_cloud.svg" alt="">
-					</i>
-					<span class="serve_list_txt">遠端提款</span>
-				</li>
-			</ul>
-
-			<div class="function">
-				<button class="function_btn">關閉</button>
-			</div> -->
 			<div class="show_balance">
 				<span>帳戶餘額</span>
 				<span class="show_balance_code" data-dollor="元">367,090</span>
 			</div>
-			
+			<ul class="balanceGroup">
+				<li class="balanceGroup_list_title">快速提款</li>
+				<li class="balanceGroup_list on">1,000 元</li>
+				<li class="balanceGroup_list">3,000 元</li>
+				<li class="balanceGroup_list">5,000 元</li>
+				<li class="balanceGroup_list">7,000 元</li>
+				<li class="balanceGroup_list">10,000 元</li>
+				<li class="balanceGroup_list">20,000 元</li>
+				<li class="balanceGroup_list_function">
+					<input type="text" placeholder="請輸入提款金額">
+					<button>送出</button>
+				</li>
+			</ul>
+		</div>
+
+
+		<!-- 辨識結果彈跳視窗，把display: none;移除即可看到畫面-->
+		<div class="alert" style="display: none1;">
+			<div class="alert_box">
+				<div class="alert_title">確認提款金額</div>
+				<div class="alert_msg">
+					您提領的金額 <span class="code">20,000</span> 元， <br>
+					金額正確請按[確認]鍵
+				</div>
+				<div class="function">
+					<button id="close" class="function_btn">回上頁</button>
+					<button id="close" class="function_btn _start">確認</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
