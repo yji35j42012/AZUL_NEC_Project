@@ -34,6 +34,10 @@ h2 {
 			vertical-align: unset;
 		}
 	}
+
+	&+.limit {
+		margin-top: 75px;
+	}
 }
 
 .wrap {
@@ -58,11 +62,13 @@ h2 {
 	h1 {
 		width: 140px;
 		margin: 0 auto;
+
 		img {
 			width: 100%;
 			margin-top: 0;
 		}
 	}
+
 	h2 {
 		margin-top: 8px;
 		font-size: 20px;
@@ -134,7 +140,7 @@ h2 {
 			background: url("../images/icon_error.svg") no-repeat center/cover;
 		}
 
-		& + & {
+		&+& {
 			margin-left: 20px;
 		}
 	}
@@ -181,6 +187,7 @@ h2 {
 		font-stretch: normal;
 		font-style: normal;
 		line-height: 1.3;
+
 		span {
 			display: block;
 			font-size: 16px;
@@ -218,7 +225,7 @@ h2 {
 		border-radius: 45px;
 		transform: translateY(-50%);
 
-		& + & {
+		&+& {
 			margin-top: 22px;
 		}
 
@@ -270,7 +277,7 @@ h2 {
 		color: #444;
 		cursor: pointer;
 
-		& + & {
+		&+& {
 			margin-left: 30px;
 		}
 
@@ -327,7 +334,8 @@ h2 {
 		letter-spacing: normal;
 		text-align: center;
 		color: #5e5e5e;
-		.code{
+
+		.code {
 			color: #1e35be;
 		}
 	}
@@ -338,6 +346,7 @@ h2 {
 
 	.function {
 		margin-top: 40px;
+
 		&_btn {
 			max-width: 100px;
 		}
@@ -362,6 +371,7 @@ h2 {
 	color: #5e5e5e;
 	font-size: 20px;
 	transform: translateY(-50%);
+
 	&_code {
 		display: flex;
 		align-items: center;
@@ -373,6 +383,7 @@ h2 {
 		letter-spacing: normal;
 		text-align: center;
 		color: #1e35be;
+
 		&::after {
 			content: attr(data-dollor);
 			margin-left: 6px;
@@ -386,12 +397,14 @@ h2 {
 		}
 	}
 }
+
 // .balanceGroup
 .balanceGroup {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 0;
 	padding-top: 56px;
+
 	// .balance_list
 	&_list {
 		display: flex;
@@ -410,13 +423,16 @@ h2 {
 		letter-spacing: normal;
 		text-align: center;
 		color: #fff;
+
 		&:nth-child(odd) {
 			margin-left: 10px;
 		}
+
 		&.on {
 			border: solid 2px #1e35be;
 			background-color: #1e35be;
 		}
+
 		// .balance_list_title
 		&_title {
 			width: 100%;
@@ -428,12 +444,15 @@ h2 {
 			letter-spacing: normal;
 			color: #5e5e5e;
 		}
+
 		// .balanceGroup_list_function
 		&_function {
 			width: 100%;
 			display: flex;
 			margin-top: 25px;
-			input {width: 100%;
+
+			input {
+				width: 100%;
 				padding: 11px 12px 14px;
 				border-radius: 10px;
 				border: solid 1px #bbb;
@@ -445,6 +464,7 @@ h2 {
 				letter-spacing: normal;
 				color: #8d8d91;
 			}
+
 			button {
 				flex: none;
 				margin-left: 10px;
@@ -462,4 +482,11 @@ h2 {
 			}
 		}
 	}
+}
+
+.limit {
+	padding: 13px 22px 35px;
+	border-radius: 10px;
+	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.08);
+	background-color: #fff;
 }
