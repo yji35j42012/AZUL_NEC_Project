@@ -41,7 +41,7 @@
         </div>
         <div class="function">
             <button class="function_btn">取消</button>
-            <button class="function_btn _start">開始虹膜辨識</button>
+            <button id="btn" class="function_btn _start">開始虹膜辨識</button>
         </div>
 
 
@@ -56,14 +56,23 @@
                     </li>
                 </ul>
                 <div class="alert_msg">
-                    請重新操作一次
+                    請重新操作
                 </div>
                 <div class="function">
-                    <button class="function_btn">回上頁</button>
+                    <button id="close" class="function_btn">回上頁</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        document.querySelector('.function_btn._start').onclick = function () {
+            document.querySelector('.alert').style.display = '';
+        }
+        document.querySelector('#close').onclick = function () {
+            document.querySelector('.alert').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>

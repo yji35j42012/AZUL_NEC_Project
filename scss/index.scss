@@ -181,6 +181,17 @@ h2 {
         font-stretch: normal;
         font-style: normal;
         line-height: 1.3;
+        span {
+            display: block;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.63;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fff;
+        }
     }
 }
 
@@ -325,6 +336,42 @@ h2 {
         margin-top: 40px;
         &_btn {
             max-width: 100px;
+        }
+    }
+}
+
+.show_balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    color: #5e5e5e;
+    transform: translateY(-50%);
+    &_code {
+		display: flex;
+		align-items: center;
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1e35be;
+        &::after {
+            content: attr(data-dollor);
+			margin-left: 6px;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+			color: #5e5e5e;
         }
     }
 }

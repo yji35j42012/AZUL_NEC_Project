@@ -217,6 +217,18 @@ h2 {
   line-height: 1.3;
 }
 
+.member_welcome span {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,5 +395,55 @@ h2 {
 
 .alert .function_btn {
   max-width: 100px;
+}
+
+.show_balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 92px;
+  padding: 0 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  color: #5e5e5e;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.show_balance_code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1e35be;
+}
+
+.show_balance_code::after {
+  content: attr(data-dollor);
+  margin-left: 6px;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5e5e5e;
 }
 /*# sourceMappingURL=index.css.map */
