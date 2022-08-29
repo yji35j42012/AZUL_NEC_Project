@@ -47,7 +47,7 @@ h2 {
     width: 100%;
     height: 100%;
     padding-top: 160px;
-    // background: linear-gradient(157deg, #05097b 20%, #93d1ab);
+    background: linear-gradient(157deg, #05097b 20%, #93d1ab);
     text-align: center;
 
     img {
@@ -56,7 +56,23 @@ h2 {
     }
 
     h1 {
-        font-size: 40px;
+        width: 140px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+    h2 {
+        margin-top: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
     }
 }
 
@@ -97,28 +113,28 @@ h2 {
         border-radius: 100%;
 
         &._check::before {
-            content: '';
+            content: "";
             position: absolute;
             top: -5px;
             right: -5px;
             display: block;
             width: 22px;
             height: 22px;
-            background: url('../images/icon_check.svg')no-repeat center/cover;
+            background: url("../images/icon_check.svg") no-repeat center/cover;
         }
 
         &._error::before {
-            content: '';
+            content: "";
             position: absolute;
             top: -5px;
             right: -5px;
             display: block;
             width: 22px;
             height: 22px;
-            background: url('../images/icon_error.svg')no-repeat center/cover;
+            background: url("../images/icon_error.svg") no-repeat center/cover;
         }
 
-        &+& {
+        & + & {
             margin-left: 20px;
         }
     }
@@ -129,7 +145,6 @@ h2 {
         height: 100%;
         margin-top: 30px;
     }
-
 }
 
 .member {
@@ -137,7 +152,6 @@ h2 {
     height: 304px;
     padding-top: 26px;
     background: linear-gradient(133deg, #05097b 23%, #93d1ab);
-
 
     &_pic {
         display: flex;
@@ -192,7 +206,7 @@ h2 {
         border-radius: 45px;
         transform: translateY(-50%);
 
-        &+& {
+        & + & {
             margin-top: 22px;
         }
 
@@ -244,7 +258,7 @@ h2 {
         color: #444;
         cursor: pointer;
 
-        &+& {
+        & + & {
             margin-left: 30px;
         }
 
@@ -266,7 +280,7 @@ h2 {
     width: 100%;
     height: 100%;
 
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7);
 
     // .alert_box
     &_box {
