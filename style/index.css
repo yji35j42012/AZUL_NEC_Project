@@ -9,17 +9,26 @@ h2 {
 }
 
 .normal_title {
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 32px;
   color: #fff;
   font-size: 24px;
   font-weight: bold;
 }
+
 .normal_title .icon_back {
   position: absolute;
   top: 0;
@@ -30,13 +39,19 @@ h2 {
   height: 24px;
   margin: auto;
 }
+
 .normal_title .icon_back img {
   vertical-align: unset;
 }
 
 .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
 }
@@ -47,34 +62,53 @@ h2 {
   padding-top: 160px;
   text-align: center;
 }
+
 .opening img {
   width: 256px;
   margin-top: 40px;
 }
+
 .opening h1 {
   font-size: 40px;
 }
 
 .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   padding-top: 26px;
   padding-bottom: 70px;
 }
+
 .step_txt {
   margin-top: 15px;
   color: #fff;
   font-size: 20px;
   line-height: 1.6;
 }
+
 .step_iconGroup {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 36px;
 }
+
 .step_iconItem {
   position: relative;
   width: 60px;
@@ -83,8 +117,9 @@ h2 {
   background-color: #e8ebf2;
   border-radius: 100%;
 }
+
 .step_iconItem._check::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -5px;
   right: -5px;
@@ -93,8 +128,9 @@ h2 {
   height: 22px;
   background: url("../images/icon_check.svg") no-repeat center/cover;
 }
+
 .step_iconItem._error::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -5px;
   right: -5px;
@@ -103,33 +139,46 @@ h2 {
   height: 22px;
   background: url("../images/icon_error.svg") no-repeat center/cover;
 }
+
 .step_iconItem + .step_iconItem {
   margin-left: 20px;
 }
+
 .step_pic {
   height: 100%;
   margin-top: 30px;
 }
 
 .member {
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   height: 304px;
   padding-top: 26px;
   background: linear-gradient(133deg, #05097b 23%, #93d1ab);
 }
+
 .member_pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90px;
   height: 90px;
   margin: 20px auto 0;
   background-color: #e8ebf2;
   border-radius: 100%;
 }
+
 .member_pic img {
   width: 100%;
 }
+
 .home .member_pic img {
   width: 48px;
 }
@@ -146,8 +195,13 @@ h2 {
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   padding: 0 36px 70px;
   background-color: #f9fafa;
@@ -156,22 +210,33 @@ h2 {
 .serve {
   height: 100%;
 }
+
 .serve_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 90px;
   padding-left: 16px;
   background-color: #fff;
-  box-shadow: 0 10px 32px 0 rgba(14, 31, 53, 0.2);
+  -webkit-box-shadow: 0 10px 32px 0 rgba(14, 31, 53, 0.2);
+          box-shadow: 0 10px 32px 0 rgba(14, 31, 53, 0.2);
   border-radius: 45px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
+
 .serve_list + .serve_list {
   margin-top: 22px;
 }
+
 .serve_list_icon {
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   display: block;
   width: 60px;
   height: 60px;
@@ -180,6 +245,7 @@ h2 {
   background-color: #e8ebf2;
   border-radius: 100%;
 }
+
 .serve_list_txt {
   font-size: 20px;
   font-weight: bold;
@@ -191,12 +257,20 @@ h2 {
 }
 
 .function {
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  margin-top: 15px;
   padding: 0 25px;
 }
+
 .function_btn {
   width: 100%;
   height: 48px;
@@ -214,9 +288,11 @@ h2 {
   color: #444;
   cursor: pointer;
 }
+
 .function_btn + .function_btn {
   margin-left: 30px;
 }
+
 .function_btn._start {
   background-color: #137eff;
   border: solid 2px #a1cbfe;
@@ -227,21 +303,30 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
 }
+
 .alert_box {
   width: 100%;
   max-width: 340px;
   padding: 20px 0 40px;
-  box-shadow: 0 16px 40px -16px rgba(141, 141, 141, 0.05);
+  -webkit-box-shadow: 0 16px 40px -16px rgba(141, 141, 141, 0.05);
+          box-shadow: 0 16px 40px -16px rgba(141, 141, 141, 0.05);
   background-color: #fff;
   border-radius: 8px;
 }
+
 .alert_title {
   font-size: 24px;
   font-weight: bold;
@@ -252,6 +337,7 @@ h2 {
   text-align: center;
   color: #000;
 }
+
 .alert_msg {
   margin-top: 20px;
   font-size: 20px;
@@ -263,12 +349,16 @@ h2 {
   text-align: center;
   color: #5e5e5e;
 }
+
 .alert .step_iconGroup {
   margin-top: 25px;
 }
+
 .alert .function {
   margin-top: 40px;
 }
+
 .alert .function_btn {
   max-width: 100px;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */

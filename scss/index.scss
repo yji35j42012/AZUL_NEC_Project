@@ -80,6 +80,7 @@ h2 {
 
     // .step_iconGroup
     &_iconGroup {
+        flex: none;
         display: flex;
         justify-content: center;
         margin-top: 36px;
@@ -221,6 +222,7 @@ h2 {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 15px;
     padding: 0 25px;
 
     &_btn {
@@ -305,7 +307,6 @@ h2 {
 
     .function {
         margin-top: 40px;
-
         &_btn {
             max-width: 100px;
         }
