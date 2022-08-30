@@ -5,7 +5,6 @@
 
 開啟、功能選單、虹膜辨識、虹膜辨識＿失敗、提款完成畫面
 
-
 github可進行簡單測試
 開啟
 https://yji35j42012.github.io/AZUL_NEC_Project/
