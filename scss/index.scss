@@ -13,8 +13,8 @@ h2 {
 .mt_75px {
     margin-top: 75px;
 }
-.txtc{
-	text-align: center;
+.txtc {
+    text-align: center;
 }
 .normal_title {
     flex: none;
@@ -154,6 +154,12 @@ h2 {
         flex: 1 1 100%;
         height: 100%;
         margin-top: 30px;
+        & + & {
+            margin-top: 20px;
+        }
+        &._qr + .function {
+            margin-top: 33px;
+        }
     }
     // .step_info
     &_info {
@@ -174,20 +180,20 @@ h2 {
             & + .limit {
                 margin-top: 30px;
             }
-		}
-		
-		// .step_info_txt
-		&_txt{
-			padding: 40px 18px;
-			font-size: 20px;
-			font-weight: normal;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.6;
-			letter-spacing: normal;
-			text-align: center;
-			color: #fff;
-		}
+        }
+
+        // .step_info_txt
+        &_txt {
+            padding: 40px 18px;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fff;
+        }
     }
 }
 
