@@ -53,7 +53,7 @@ h2 {
 .opening {
     width: 100%;
     min-height: 100%;
-    padding-top: 160px;
+    padding: 160px 0;
     background: linear-gradient(157deg, #05097b 20%, #93d1ab);
     text-align: center;
 
@@ -594,7 +594,7 @@ h2 {
     }
 }
 
-@media only screen and (max-height: 320px) {
+@media only screen and (max-width: 320px) {
     .opening {
         padding: 80px 0;
     }
