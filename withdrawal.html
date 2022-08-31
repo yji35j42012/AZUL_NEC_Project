@@ -42,14 +42,14 @@
 				<li class="balanceGroup_list">20,000 元</li>
 				<li class="balanceGroup_list_function">
 					<input type="text" placeholder="請輸入提款金額">
-					<button>送出</button>
+					<button id="submit">送出</button>
 				</li>
 			</ul>
 		</div>
 
 
 		<!-- 辨識結果彈跳視窗，把display: none;移除即可看到畫面-->
-		<div class="alert" style="display: none1;">
+		<div class="alert" style="display: none;">
 			<div class="alert_box">
 				<div class="alert_title">確認提款金額</div>
 				<div class="alert_msg">
@@ -63,6 +63,15 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		document.querySelector('#submit').onclick = function () {
+			document.querySelector('.alert').style.display = '';
+		}
+		document.querySelector('#close').onclick = function () {
+			document.querySelector('.alert').style.display = 'none';
+		}
+	</script>
 </body>
 
 </html>
