@@ -1,4 +1,28 @@
 
+https://yji35j42012.github.io/AZUL_NEC_Project/withdrawal.html	
+https://yji35j42012.github.io/AZUL_NEC_Project/withdrawal.html	
+https://yji35j42012.github.io/AZUL_NEC_Project/success.html	
+https://yji35j42012.github.io/AZUL_NEC_Project/update_check.html	
+https://yji35j42012.github.io/AZUL_NEC_Project/scanning.html	
+------------------------111.08.31------------------------
+
+
+提款、提款確認、帳戶升級確認頁、帳戶升級確認頁2、設定完成qrcode
+
+github可進行簡單測試
+提款、提款確認 點擊送出按鈕即可看到(只有github上有功能)
+https://yji35j42012.github.io/AZUL_NEC_Project/withdrawal.html
+帳戶升級確認頁
+https://yji35j42012.github.io/AZUL_NEC_Project/success.html
+帳戶升級確認頁2
+https://yji35j42012.github.io/AZUL_NEC_Project/update_check.html
+設定完成qrcode
+https://yji35j42012.github.io/AZUL_NEC_Project/scanning.html
+
+畫面對應檔案名稱可看此試算表
+https://docs.google.com/spreadsheets/d/1TSJ5A92Krl2jmSqq_j1yRk176DYd1hpx-IzOpmeWPNY/edit#gid=1344775722
+
+------------------------111.08.31------------------------
 
 ------------------------111.08.29------------------------
 

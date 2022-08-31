@@ -70,8 +70,8 @@ h2 {
 
 .opening {
   width: 100%;
-  height: 100%;
-  padding-top: 160px;
+  min-height: 100%;
+  padding: 160px 0;
   background: linear-gradient(157deg, #05097b 20%, #93d1ab);
   text-align: center;
 }
@@ -198,6 +198,7 @@ h2 {
           flex: 1 1 100%;
   width: 100%;
   height: 100%;
+  padding: 0 10px;
 }
 
 .step_info_title {
@@ -296,6 +297,10 @@ h2 {
   height: 100%;
   padding: 0 36px 70px;
   background-color: #f9fafa;
+}
+
+.main._balance {
+  padding: 0 24px 70px;
 }
 
 .serve {
@@ -405,6 +410,7 @@ h2 {
           align-items: center;
   width: 100%;
   height: 100%;
+  padding: 0 10px;
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -471,7 +477,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: calc(100% - 72px);
+  width: calc(100% - 48px);
   height: 92px;
   margin: 0 auto;
   padding: 0 10px;
@@ -680,5 +686,14 @@ h2 {
   letter-spacing: normal;
   text-align: center;
   color: #1e35be;
+}
+
+@media only screen and (max-width: 320px) {
+  .opening {
+    padding: 80px 0;
+  }
+  .function_btn + .function_btn {
+    margin-left: 15px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
