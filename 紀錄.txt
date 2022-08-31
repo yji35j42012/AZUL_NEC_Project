@@ -8,6 +8,7 @@ https://yji35j42012.github.io/AZUL_NEC_Project/scanning.html
 
 
 提款、提款確認、帳戶升級確認頁、帳戶升級確認頁2、設定完成qrcode
+style資料夾內檔案有修改，請務必覆蓋檔案
 
 github可進行簡單測試
 提款、提款確認 點擊送出按鈕即可看到(只有github上有功能)
