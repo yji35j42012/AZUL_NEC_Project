@@ -299,6 +299,10 @@ h2 {
   background-color: #f9fafa;
 }
 
+.main._balance {
+  padding: 0 24px 70px;
+}
+
 .serve {
   height: 100%;
 }
