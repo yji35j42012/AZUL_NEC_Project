@@ -688,9 +688,12 @@ h2 {
   color: #1e35be;
 }
 
-@media only screen and (max-height: 455px) {
+@media only screen and (max-height: 320px) {
   .opening {
     padding: 80px 0;
+  }
+  .function_btn + .function_btn {
+    margin-left: 15px;
   }
 }
 /*# sourceMappingURL=index.css.map */
