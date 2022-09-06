@@ -81,6 +81,16 @@ h2 {
   margin-top: 40px;
 }
 
+.opening img.opening_qrcode {
+  width: 128px;
+  margin-top: 50px;
+}
+
+.opening img.opening_qrcode + .function {
+  width: 280px;
+  margin-top: 70px;
+}
+
 .opening h1 {
   width: 140px;
   margin: 0 auto;
@@ -101,6 +111,47 @@ h2 {
   letter-spacing: normal;
   text-align: center;
   color: #fff;
+}
+
+.opening .function {
+  margin-top: 40px;
+}
+
+.opening .function_btn {
+  height: 60px;
+}
+
+.opening._pc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 123px 20px;
+}
+
+.opening_box {
+  display: inline-block;
+}
+
+.opening_txt {
+  font-family: MicrosoftJhengHei;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+h2 + .opening_txt {
+  margin-top: 20px;
 }
 
 .step {

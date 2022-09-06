@@ -60,6 +60,15 @@ h2 {
     img {
         width: 256px;
         margin-top: 40px;
+        &.opening_qrcode {
+            width: 128px;
+            margin-top: 50px;
+
+            & + .function{
+                width: 280px;
+                margin-top: 70px;
+            }
+        }
     }
 
     h1 {
@@ -83,8 +92,39 @@ h2 {
         text-align: center;
         color: #fff;
     }
-}
+    .function {
+        margin-top: 40px;
+        &_btn {
+            height: 60px;
+        }
+    }
 
+    &._pc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 123px 20px;
+    }
+    //  .opening_box
+    &_box {
+        display: inline-block;
+    }
+    // .opening_txt
+    &_txt {
+        font-family: MicrosoftJhengHei;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.08;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        h2 + & {
+            margin-top: 20px;
+        }
+    }
+}
 .step {
     display: flex;
     align-items: center;
