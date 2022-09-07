@@ -680,6 +680,13 @@ h2 + .opening_txt {
   letter-spacing: normal;
   color: #1e35be;
 }
+.report_list_li._msgl::before {
+  content: attr(data-msgl);
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: -0.97px;
+  color: #5e5e5e;
+}
 .report_list_li + .report_list_li {
   border-top: 1px solid #e1e2eb;
 }
@@ -706,10 +713,41 @@ h2 + .opening_txt {
   letter-spacing: normal;
   color: #8c8c8c;
 }
-.msgl::before {
-  content: attr(data-msgl);
+
+.currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currency_txt {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 6px;
+  font-family: MicrosoftJhengHei;
   font-size: 20px;
   font-weight: normal;
-  letter-spacing: -0.97px;
-  color: #5e5e5e;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.currency_txt::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  background-color: #5686e8;
+  border-radius: 100%;
+}
+.currency_num {
+  display: inline-flex;
+  align-items: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }/*# sourceMappingURL=index.css.map */

@@ -789,6 +789,14 @@ h2 {
             letter-spacing: normal;
             color: #1e35be;
 
+            &._msgl::before {
+                content: attr(data-msgl);
+                font-size: 20px;
+                font-weight: normal;
+                letter-spacing: -0.97px;
+                color: #5e5e5e;
+            }
+
             &+& {
                 border-top: 1px solid #e1e2eb;
             }
@@ -822,20 +830,51 @@ h2 {
             line-height: normal;
             letter-spacing: normal;
             color: #8c8c8c;
+        }
+    }
+}
 
-            .msgl{
-                
-            }
+.currency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // .currency_txt
+    &_txt {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 6px;
+        font-family: MicrosoftJhengHei;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 6px;
+            background-color: #5686e8;
+            border-radius: 100%;
         }
     }
 
-
+    // .currency_num
+    &_num {
+        display: inline-flex;
+        align-items: center;
+        font-family: MicrosoftJhengHei;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+    }
 }
 
-.msgl::before {
-    content: attr(data-msgl);
-    font-size: 20px;
-    font-weight: normal;
-    letter-spacing: -0.97px;
-    color: #5e5e5e;
-}
+// background-color: #e1e2eb;
