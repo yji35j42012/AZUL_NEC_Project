@@ -2,19 +2,24 @@ h1,
 h2 {
     color: #fff;
 }
+
 h2 {
     font-size: 20px;
     font-weight: bold;
 }
+
 .mt_18px {
     margin-top: 18px;
 }
+
 .mt_75px {
     margin-top: 75px;
 }
+
 .txtc {
     text-align: center;
 }
+
 .normal_title {
     flex: none;
     position: relative;
@@ -60,11 +65,12 @@ h2 {
     img {
         width: 256px;
         margin-top: 40px;
+
         &.opening_qrcode {
             width: 128px;
             margin-top: 50px;
 
-            & + .function {
+            &+.function {
                 width: 280px;
                 margin-top: 70px;
             }
@@ -92,8 +98,10 @@ h2 {
         text-align: center;
         color: #fff;
     }
+
     .function {
         margin-top: 40px;
+
         &_btn {
             height: 60px;
         }
@@ -105,10 +113,12 @@ h2 {
         align-items: center;
         padding: 123px 20px;
     }
+
     //  .opening_box
     &_box {
         display: inline-block;
     }
+
     // .opening_txt
     &_txt {
         font-family: MicrosoftJhengHei;
@@ -120,11 +130,13 @@ h2 {
         letter-spacing: normal;
         text-align: center;
         color: #fff;
-        h2 + & {
+
+        h2+& {
             margin-top: 20px;
         }
     }
 }
+
 .step {
     display: flex;
     align-items: center;
@@ -183,7 +195,7 @@ h2 {
             background: url("../images/icon_error.svg") no-repeat center/cover;
         }
 
-        & + & {
+        &+& {
             margin-left: 20px;
         }
     }
@@ -193,19 +205,23 @@ h2 {
         flex: 1 1 100%;
         height: 100%;
         margin-top: 30px;
-        & + & {
+
+        &+& {
             margin-top: 20px;
         }
-        &._qr + .function {
+
+        &._qr+.function {
             margin-top: 33px;
         }
     }
+
     // .step_info
     &_info {
         flex: 1 1 100%;
         width: 100%;
         height: 100%;
         padding: 0 10px;
+
         // .step_info_title
         &_title {
             font-size: 20px;
@@ -216,7 +232,8 @@ h2 {
             letter-spacing: normal;
             text-align: center;
             color: #fff;
-            & + .limit {
+
+            &+.limit {
                 margin-top: 30px;
             }
         }
@@ -292,6 +309,7 @@ h2 {
     height: 100%;
     padding: 0 36px 70px;
     background-color: #f9fafa;
+
     &._balance {
         padding: 0 24px 70px;
     }
@@ -311,7 +329,7 @@ h2 {
         border-radius: 45px;
         transform: translateY(-50%);
 
-        & + & {
+        &+& {
             margin-top: 22px;
         }
 
@@ -363,7 +381,7 @@ h2 {
         color: #444;
         cursor: pointer;
 
-        & + & {
+        &+& {
             margin-left: 30px;
         }
 
@@ -582,9 +600,11 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.08);
     background-color: #fff;
-    & + & {
+
+    &+& {
         margin-top: 10px;
     }
+
     // .limit_title
     &_title {
         flex: none;
@@ -598,6 +618,7 @@ h2 {
         text-align: center;
         color: #5e5e5e;
         border-bottom: solid 0.8px #d2d1d7;
+
         &._entity {
             color: #1e35be;
         }
@@ -615,11 +636,13 @@ h2 {
         letter-spacing: normal;
         color: #5e5e5e;
     }
+
     // .limit_list
     &_list {
-        & + & {
+        &+& {
             margin-top: 20px;
         }
+
         // .limit_list_note
         &_note {
             font-size: 24px;
@@ -638,7 +661,8 @@ h2 {
     .opening {
         padding: 80px 0;
     }
-    .function_btn + .function_btn {
+
+    .function_btn+.function_btn {
         margin-left: 15px;
     }
 }
@@ -646,6 +670,7 @@ h2 {
 .report {
     position: relative;
     padding: 10px 32px;
+
     &::before {
         content: "";
         position: absolute;
@@ -656,6 +681,7 @@ h2 {
         height: 348px;
         background-image: linear-gradient(106deg, #05097b 25%, #93d1ab);
     }
+
     // .report_header
     &_header {
         position: relative;
@@ -663,6 +689,7 @@ h2 {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 10px;
+
         // .report_header_title
         &_title {
             font-family: MicrosoftJhengHei;
@@ -686,19 +713,22 @@ h2 {
         position: relative;
         display: flex;
     }
+
     // .report_list
     &_list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px 20px 75px;
+        padding: 20px 20px 55px;
         border-radius: 9px;
         box-shadow: 0 2px 12px 0 rgba(47, 83, 151, 0.1);
         background-color: #fff;
         text-align: center;
-        & + & {
+
+        &+& {
             margin-left: 10px;
         }
+
         // .report_list_title
         &_title {
             margin-bottom: 10px;
@@ -712,6 +742,7 @@ h2 {
             text-align: center;
             color: #5e5e5e;
         }
+
         // .report_list_face
         &_face {
             width: 200px;
@@ -719,25 +750,31 @@ h2 {
             margin-bottom: 10px;
             border-radius: 100%;
         }
+
         // .report_list_eyes
         &_eyes {
             display: flex;
             padding-bottom: 30px;
+
             img {
                 width: 100px;
             }
-            img + img {
+
+            img+img {
                 margin-left: 10px;
             }
         }
+
         // .report_list_botBorder
         &_botBorder {
             border-bottom: 1px solid #e1e2eb;
         }
+
         // .report_list_ul
         &_ul {
             width: 100%;
         }
+
         // .report_list_li
         &_li {
             display: flex;
@@ -751,16 +788,20 @@ h2 {
             line-height: 1.07;
             letter-spacing: normal;
             color: #1e35be;
-            &._msgl::before {
-                content: attr(data-msgl);
-                font-size: 20px;
-                font-weight: normal;
-                letter-spacing: -0.97px;
-                color: #5e5e5e;
-            }
 
-            & + & {
+            &+& {
                 border-top: 1px solid #e1e2eb;
+            }
+        }
+
+        // .report_list_statistics
+        &_statistics {
+
+            padding: 35px 84px 62px;
+
+            img {
+                width: 240px;
+                height: 240px;
             }
         }
     }
@@ -768,9 +809,33 @@ h2 {
     // .report_table
     &_table {
         width: 100%;
+        margin-top: 12px;
         border-collapse: collapse;
         border-spacing: 0;
+
+        td {
+            padding: 8px 0;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #8c8c8c;
+
+            .msgl{
+                
+            }
+        }
     }
+
+
 }
 
-// background-color: #e1e2eb;
+.msgl::before {
+    content: attr(data-msgl);
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: -0.97px;
+    color: #5e5e5e;
+}
