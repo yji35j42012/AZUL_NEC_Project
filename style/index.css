@@ -848,6 +848,7 @@ h2 + .opening_txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 30px;
 }
 
 .report_list_eyes img {
@@ -856,5 +857,49 @@ h2 + .opening_txt {
 
 .report_list_eyes img + img {
   margin-left: 10px;
+}
+
+.report_list_botBorder {
+  border-bottom: 1px solid #e1e2eb;
+}
+
+.report_list_ul {
+  width: 100%;
+}
+
+.report_list_li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px;
+  font-family: MicrosoftJhengHei;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: normal;
+  color: #1e35be;
+}
+
+.report_list_li._msgl::before {
+  content: attr(data-msgl);
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: -0.97px;
+  color: #5e5e5e;
+}
+
+.report_list_li + .report_list_li {
+  border-top: 1px solid #e1e2eb;
+}
+
+.report_table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /*# sourceMappingURL=index.css.map */

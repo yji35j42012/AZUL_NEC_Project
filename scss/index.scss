@@ -722,7 +722,7 @@ h2 {
         // .report_list_eyes
         &_eyes {
             display: flex;
-
+            padding-bottom: 30px;
             img {
                 width: 100px;
             }
@@ -730,5 +730,47 @@ h2 {
                 margin-left: 10px;
             }
         }
+        // .report_list_botBorder
+        &_botBorder {
+            border-bottom: 1px solid #e1e2eb;
+        }
+        // .report_list_ul
+        &_ul {
+            width: 100%;
+        }
+        // .report_list_li
+        &_li {
+            display: flex;
+            align-items: center;
+            padding: 20px 10px;
+            font-family: MicrosoftJhengHei;
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.07;
+            letter-spacing: normal;
+            color: #1e35be;
+            &._msgl::before {
+                content: attr(data-msgl);
+                font-size: 20px;
+                font-weight: normal;
+                letter-spacing: -0.97px;
+                color: #5e5e5e;
+            }
+
+            & + & {
+                border-top: 1px solid #e1e2eb;
+            }
+        }
+    }
+
+    // .report_table
+    &_table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
     }
 }
+
+// background-color: #e1e2eb;
