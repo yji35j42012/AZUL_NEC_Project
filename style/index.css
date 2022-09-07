@@ -747,4 +747,114 @@ h2 + .opening_txt {
     margin-left: 15px;
   }
 }
+
+.report {
+  position: relative;
+  padding: 10px 32px;
+}
+
+.report::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 348px;
+  background-image: linear-gradient(106deg, #05097b 25%, #93d1ab);
+}
+
+.report_header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.report_header_title {
+  font-family: MicrosoftJhengHei;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.report_header .function_btn {
+  max-width: 150px;
+  height: 40px;
+}
+
+.report_group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.report_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px 75px;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(47, 83, 151, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(47, 83, 151, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.report_list + .report_list {
+  margin-left: 10px;
+}
+
+.report_list_title {
+  margin-bottom: 10px;
+  font-family: MicrosoftJhengHei;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5e5e5e;
+}
+
+.report_list_face {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+}
+
+.report_list_eyes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.report_list_eyes img {
+  width: 100px;
+}
+
+.report_list_eyes img + img {
+  margin-left: 10px;
+}
 /*# sourceMappingURL=index.css.map */
