@@ -70,7 +70,7 @@ h2 {
             width: 128px;
             margin-top: 50px;
 
-            &+.function {
+            & + .function {
                 width: 280px;
                 margin-top: 70px;
             }
@@ -131,7 +131,7 @@ h2 {
         text-align: center;
         color: #fff;
 
-        h2+& {
+        h2 + & {
             margin-top: 20px;
         }
     }
@@ -195,7 +195,7 @@ h2 {
             background: url("../images/icon_error.svg") no-repeat center/cover;
         }
 
-        &+& {
+        & + & {
             margin-left: 20px;
         }
     }
@@ -206,11 +206,11 @@ h2 {
         height: 100%;
         margin-top: 30px;
 
-        &+& {
+        & + & {
             margin-top: 20px;
         }
 
-        &._qr+.function {
+        &._qr + .function {
             margin-top: 33px;
         }
     }
@@ -233,7 +233,7 @@ h2 {
             text-align: center;
             color: #fff;
 
-            &+.limit {
+            & + .limit {
                 margin-top: 30px;
             }
         }
@@ -329,7 +329,7 @@ h2 {
         border-radius: 45px;
         transform: translateY(-50%);
 
-        &+& {
+        & + & {
             margin-top: 22px;
         }
 
@@ -381,7 +381,7 @@ h2 {
         color: #444;
         cursor: pointer;
 
-        &+& {
+        & + & {
             margin-left: 30px;
         }
 
@@ -601,7 +601,7 @@ h2 {
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.08);
     background-color: #fff;
 
-    &+& {
+    & + & {
         margin-top: 10px;
     }
 
@@ -639,7 +639,7 @@ h2 {
 
     // .limit_list
     &_list {
-        &+& {
+        & + & {
             margin-top: 20px;
         }
 
@@ -662,7 +662,7 @@ h2 {
         padding: 80px 0;
     }
 
-    .function_btn+.function_btn {
+    .function_btn + .function_btn {
         margin-left: 15px;
     }
 }
@@ -681,7 +681,12 @@ h2 {
         height: 348px;
         background-image: linear-gradient(106deg, #05097b 25%, #93d1ab);
     }
-
+    // .report_container
+    &_container {
+        width: 100%;
+        max-width: 1350px;
+        margin: auto;
+    }
     // .report_header
     &_header {
         position: relative;
@@ -725,10 +730,21 @@ h2 {
         background-color: #fff;
         text-align: center;
 
-        &+& {
+        & + & {
             margin-left: 10px;
         }
-
+        // .report_list._w300px
+        &._w300px {
+            flex: 1 0 300px;
+        }
+        // .report_list._w300px
+        &._w448px {
+            flex: 1 0 448px;
+        }
+        // .report_list._w300px
+        &._w518px {
+            flex: 1 0 518px;
+        }
         // .report_list_title
         &_title {
             margin-bottom: 10px;
@@ -760,7 +776,7 @@ h2 {
                 width: 100px;
             }
 
-            img+img {
+            img + img {
                 margin-left: 10px;
             }
         }
@@ -797,19 +813,26 @@ h2 {
                 color: #5e5e5e;
             }
 
-            &+& {
+            & + & {
                 border-top: 1px solid #e1e2eb;
             }
         }
 
         // .report_list_statistics
         &_statistics {
-
             padding: 35px 84px 62px;
 
             img {
                 width: 240px;
                 height: 240px;
+            }
+        }
+
+        // .report_list_exchangePic
+        &_exchangePic {
+            margin-bottom: 20px;
+            img {
+                width: 476px;
             }
         }
     }
@@ -820,7 +843,86 @@ h2 {
         margin-top: 12px;
         border-collapse: collapse;
         border-spacing: 0;
+        &._exchange {
+            td {
+                font-size: 16px;
 
+                &.exchange_num {
+                    font-weight: bold;
+                }
+            }
+        }
+        &._fund {
+            margin-top: 20px;
+            td {
+                border-bottom: 1px solid #e1e2eb;
+            }
+        }
+        // .report_table th
+        th {
+            // padding: 5px 0;
+            //
+            //
+            &.rw2 {
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 74px;
+                }
+            }
+            span {
+                display: inline-block;
+                width: 100%;
+                height: 36px;
+                padding: 2px 20px;
+                font-size: 20px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                background-color: #f0f1f5;
+                color: #8c8c8c;
+                border: 2px solid #ffffff;
+                border-radius: 4px;
+            }
+            &.report_table_exchange {
+                padding: 0;
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 5px 0;
+                    font-family: MicrosoftJhengHei;
+                    line-height: 1.3;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 4px;
+                    background-color: #7489dd;
+                }
+            }
+            // th.report_table_fund
+            &.report_table_fund {
+                padding: 0;
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 5px 0;
+                    font-size: 20px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.3;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #5e5e5e;
+                    border-radius: 4px;
+                    background-color: #f0f1f5;
+                }
+            }
+        }
         td {
             padding: 8px 0;
             font-size: 20px;
@@ -830,6 +932,78 @@ h2 {
             line-height: normal;
             letter-spacing: normal;
             color: #8c8c8c;
+            // td.report_table_fund
+            &.report_table_fund {
+                padding: 20px 5px;
+                text-align: left;
+                .name {
+                    overflow: hidden;
+                    width: 106px;
+                    margin-bottom: 4px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                div {
+                    line-height: 26px;
+                }
+            }
+
+            &.pal {
+                font-weight: bold;
+            }
+            &.roi {
+                span {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100px;
+                    height: 36px;
+                    border-radius: 4px;
+                    color: #fff;
+                }
+            }
+        }
+        &._assets {
+            th {
+                padding: 12px 0;
+                span {
+                    width: auto;
+                }
+            }
+            td {
+                padding: 6px 0;
+            }
+            & + & {
+                border-top: 1px solid #e1e2eb;
+            }
+            &:not(._only) + &:not(._only) {
+                margin-top: 12px;
+            }
+            &._only {
+                td {
+                    padding: 12px 0 0;
+                }
+            }
+        }
+        .coin {
+            font-family: MicrosoftJhengHei;
+            font-size: 24px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.25;
+            letter-spacing: normal;
+            color: #1e35be;
+        }
+        .total {
+            font-family: MicrosoftJhengHei;
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.07;
+            letter-spacing: normal;
+            color: #ec6f00;
         }
     }
 }
@@ -853,13 +1027,36 @@ h2 {
         letter-spacing: normal;
 
         &::before {
-            content: '';
+            content: "";
             display: inline-block;
             width: 12px;
             height: 12px;
             margin-right: 6px;
-            background-color: #5686e8;
             border-radius: 100%;
+        }
+        // 台幣活存
+        &._demandTWD::before {
+            background-color: #5686e8;
+        }
+        // 台幣定存
+        &._depositsTWD::before {
+            background-color: #61cfa3;
+        }
+        // 台幣信託
+        &._trustTWD::before {
+            background-color: #65799b;
+        }
+        // 外幣活存
+        &._demandForeign::before {
+            background-color: #f2c53f;
+        }
+        // 外幣定存
+        &._depositsForeign::before {
+            background-color: #dd745b;
+        }
+        // 外幣信託
+        &._trustForeign::before {
+            background-color: #6fc2e3;
         }
     }
 
@@ -877,4 +1074,87 @@ h2 {
     }
 }
 
-// background-color: #e1e2eb;
+.icon_flag {
+    flex: none;
+    width: 30px;
+    height: 20px;
+    margin-right: 2px;
+}
+.d_flex {
+    display: flex;
+
+    &._alic {
+        align-items: center;
+    }
+    &._jucc {
+        justify-content: center;
+    }
+}
+
+.txtl {
+    text-align: left;
+}
+.txtr {
+    text-align: right;
+}
+
+.total_assets {
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 117px;
+    margin-top: 12px;
+    border-radius: 9px;
+    background-color: #7489dd;
+    color: #ffffff;
+
+    // .total_assets_num
+    &_num {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: left;
+        font-family: MicrosoftJhengHei;
+        font-size: 42px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.71;
+        letter-spacing: normal;
+
+        &::before {
+            content: attr(data-txt);
+            margin-bottom: 14px;
+            font-family: MicrosoftJhengHei;
+            font-size: 20px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+        }
+    }
+}
+
+// 正
+.posi {
+    .pal {
+        color: #d10b0b;
+    }
+    .roi {
+        span {
+            background-color: #d10b0b;
+        }
+    }
+}
+// 負
+.nega {
+    .pal {
+        color: #12a30d;
+    }
+    .roi {
+        span {
+            background-color: #12a30d;
+        }
+    }
+}
