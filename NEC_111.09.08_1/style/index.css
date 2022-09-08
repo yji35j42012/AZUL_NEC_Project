@@ -868,6 +868,10 @@ h2 + .opening_txt {
   border-radius: 100%;
 }
 
+.report_list_face img {
+  width: 100%;
+}
+
 .report_list_eyes {
   display: -webkit-box;
   display: -ms-flexbox;
