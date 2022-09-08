@@ -764,7 +764,10 @@ h2 {
             width: 200px;
             height: 200px;
             margin-bottom: 10px;
-            border-radius: 100%;
+			border-radius: 100%;
+			img{
+				width: 100%;
+			}
         }
 
         // .report_list_eyes
