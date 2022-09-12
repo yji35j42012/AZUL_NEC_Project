@@ -7,6 +7,20 @@ https://yji35j42012.github.io/AZUL_NEC_Project/scanning.html
 https://yji35j42012.github.io/AZUL_NEC_Project/index_pc.html
 https://yji35j42012.github.io/AZUL_NEC_Project/signUp_pc.html
 
+------------------------111.09.08------------------------
+1.0 確認頁面 圓餅圖補上百分比
+
+github可進行簡單測試
+註冊頁面pc3_16:9
+https://yji35j42012.github.io/AZUL_NEC_Project/member.html
+註冊成功頁面pc4_16:9
+https://yji35j42012.github.io/AZUL_NEC_Project/member_inside.html
+
+畫面對應檔案名稱可看此試算表
+https://docs.google.com/spreadsheets/d/1TSJ5A92Krl2jmSqq_j1yRk176DYd1hpx-IzOpmeWPNY/edit#gid=1344775722
+
+------------------------111.09.08------------------------
+
 
 ------------------------111.09.08------------------------
 1.0 確認頁面(註冊頁面pc3_16:9、註冊成功頁面pc4_16:9)

@@ -764,10 +764,10 @@ h2 {
             width: 200px;
             height: 200px;
             margin-bottom: 10px;
-			border-radius: 100%;
-			img{
-				width: 100%;
-			}
+            border-radius: 100%;
+            img {
+                width: 100%;
+            }
         }
 
         // .report_list_eyes
@@ -823,11 +823,24 @@ h2 {
 
         // .report_list_statistics
         &_statistics {
-            padding: 35px 84px 62px;
+            position: relative;
+            padding: 35px 0 62px;
 
             img {
                 width: 240px;
                 height: 240px;
+                margin: auto;
+            }
+            .num {
+                position: absolute;
+                font-family: MicrosoftJhengHei;
+                font-size: 20px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.8;
+                letter-spacing: normal;
+                color: #5e5e5e;
             }
         }
 
