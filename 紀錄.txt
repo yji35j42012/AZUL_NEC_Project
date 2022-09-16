@@ -7,6 +7,32 @@ https://yji35j42012.github.io/AZUL_NEC_Project/scanning.html
 https://yji35j42012.github.io/AZUL_NEC_Project/index_pc.html
 https://yji35j42012.github.io/AZUL_NEC_Project/signUp_pc.html
 
+
+
+
+------------------------111.09.16------------------------
+
+1.0 確認頁面 匯率走勢圖調整
+
+確認一下，資料是一個月一筆？
+還是只是顯示每個月
+但是資料是每天都有
+
+目前github呈現資料是一個月一筆
+
+如果是每天都會有資料
+走勢圖會像圖片一樣
+
+https://yji35j42012.github.io/AZUL_NEC_Project/member.html
+------------------------111.09.16------------------------
+
+
+
+
+
+
+
+
 ------------------------111.09.08------------------------
 1.0 確認頁面 圓餅圖補上百分比
 style資料夾內檔案有修改，請務必覆蓋檔案
