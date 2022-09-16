@@ -949,11 +949,33 @@ h2 + .opening_txt {
 }
 
 .report_list_exchangePic {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 476px;
   margin-bottom: 20px;
 }
 
-.report_list_exchangePic img {
-  width: 476px;
+.report_list_exchangePic::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.report_list_exchangePic .highcharts-title,
+.report_list_exchangePic .highcharts-background,
+.report_list_exchangePic .highcharts-point,
+.report_list_exchangePic .highcharts-credits,
+.report_list_exchangePic .highcharts-legend {
+  display: none;
+}
+
+.report_list_exchangePic .highcharts-series-group,
+.report_list_exchangePic .highcharts-plot-background {
+  width: 100% !important;
 }
 
 .report_table {
