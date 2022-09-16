@@ -101,7 +101,7 @@
 				<div class="report_list _w518px">
 					<div class="report_list_title">匯率資訊</div>
 					<div class="report_list_exchangePic">
-						<div id="container" style="width: 1300px;height: 300px;margin: 0 auto"></div>
+						<div class="report_list_exchangePic_container" id="container"></div>
 						<!-- <img src="./images/us_chart.png" alt=""> -->
 					</div>
 					<table class="report_table _exchange">
@@ -141,104 +141,94 @@
 	</div>
 	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
-	<script>
-		var year = 2022;
-		var olympic = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-		var normal = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-		var showXM = [0];
-		var xData = []
-		var showData = [];//趨勢圖資料
-		// 判斷月份天數
-		function daysTotal(month, year) {
-			var tmp = year % 4
-			if (tmp == 0) {
-				return olympic[month]
-			} else {
-				return normal[month]
-			}
-		}
-		// 篩入x軸月份
-		for (let i = 1; i < 13; i++) {
-			var getDayTotal = daysTotal(i - 1, year);
-			for (let j = 1; j < getDayTotal + 1; j++) {
-				if (j == 1) {
-					xData.push(year + "-" + i)
+	<script language="JavaScript">
+
+			var year = 2022;
+			var olympic = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+			var normal = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+			var showData = [];
+			var showXM = [0];
+			var xData = ['2021-1', '2021-2', '2021-3', '2021-4', '2021-5', '2021-6', '2021-7', '2021-8', '2021-9', '2021-10', '2021-11', '2021-12',]
+			function daysTotal(month, year) {
+				var tmp = year % 4
+				if (tmp == 0) {
+					return olympic[month]
 				} else {
-					xData.push(year + "-" + i + "-" + j)
+					return normal[month]
 				}
 			}
-			var pd = showXM[showXM.length - 1] + daysTotal(i - 1, year)
-			showXM.push(pd)
-		}
-		// 假資料篩值
-		for (let i = 0; i < xData.length; i++) {
-			var ran = Math.floor(Math.random() * 9) * 0.1 + Math.floor(Math.random() * 2) + 28
-			showData.push(ran)
-		}
-
-		$(document).ready(function () {
-			var title = {};
-			var subtitle = {};
-			var chart = {
-				type: 'area',
-			};
-			var xAxis = {
-				scrollbar: {
-					enabled: true
-				},
-				tickPositions: showXM,
-				categories: xData,
-				plotBands: [
+			// 篩入假資料
+			for (let i = 0; i < xData.length; i++) {
+				var ran = Math.floor(Math.random() * 9) * 0.1 + Math.floor(Math.random() * 2) + 28
+				showData.push(ran)
+			}
+			$(document).ready(function () {
+				var title = {};
+				var subtitle = {};
+				var chart = {
+					type: 'area',
+				};
+				var xAxis = {
+					scrollbar: {
+						enabled: true,
+	
+					},
+					// tickPositions: showXM,
+					categories: xData,
+					plotBands: [
+						{
+							color: '#000000',
+						}
+					],
+					gridLineWidth: 1,
+					legend: {
+						align: 'right',
+					},
+					tickmarkPlacement:'on'
+				};
+				var yAxis = {
+					min: 28,
+					max: 32,
+					scrollbar: {
+						enabled: true,
+	
+					},
+					title: {
+						text: ''
+					},	
+				};
+	
+				var tooltip = {}
+	
+				var legend = {
+					layout: 'vertical',
+					align: 'right',
+					verticalAlign: 'middle',
+					borderWidth: 0
+				};
+	
+				var series = [
 					{
-						color: '#000000',
-					}
-				],
-				gridLineWidth: 1,
-
-			};
-			var yAxis = {
-				min: 28,
-				max: 32,
-				scrollbar: {
-					enabled: true
-				},
-				title: {
-					text: ''
-				},
-				tickmarkPlacement:'on'
-			};
-
-			var tooltip = {}
-
-			var legend = {
-				layout: 'vertical',
-				align: 'right',
-				verticalAlign: 'middle',
-				borderWidth: 0
-			};
-
-			var series = [
-				{
-					name: '',
-					data: showData,
-					lineColor: "#05097b",
-					fillColor: 'rgba(5,9,123,.15)',
-				},
-			];
-
-			var json = {};
-			json.chart = chart;
-			json.title = title;
-			json.subtitle = subtitle;
-			json.xAxis = xAxis;
-			json.yAxis = yAxis;
-			json.tooltip = tooltip;
-			json.legend = legend;
-			json.series = series;
-
-			$('#container').highcharts(json);
-		});
-	</script>
+						name: '',
+						data: showData,
+						lineColor: "#05097b",
+						fillColor: 'rgba(5,9,123,.15)',
+					},
+				];
+	
+				var json = {};
+				json.chart = chart;
+				json.title = title;
+				json.subtitle = subtitle;
+				json.xAxis = xAxis;
+				json.yAxis = yAxis;
+				json.tooltip = tooltip;
+				json.legend = legend;
+				json.series = series;
+	
+				$('#container').highcharts(json);
+			});
+		</script>
 </body>
 
 </html>

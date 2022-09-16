@@ -965,6 +965,12 @@ h2 + .opening_txt {
   height: 100%;
 }
 
+.report_list_exchangePic_container {
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+}
+
 .report_list_exchangePic .highcharts-title,
 .report_list_exchangePic .highcharts-background,
 .report_list_exchangePic .highcharts-point,
