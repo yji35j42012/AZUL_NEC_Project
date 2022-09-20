@@ -13,8 +13,14 @@ https://yji35j42012.github.io/AZUL_NEC_Project/signUp_pc.html
 1.0 確認頁面 匯率走勢圖調整
 style資料夾內檔案有修改，請務必覆蓋檔案
 
+使用的套件為highcharts js
+https://www.highcharts.com/
+
 github可進行簡單測試
 https://yji35j42012.github.io/AZUL_NEC_Project/member.html
+
+畫面對應檔案名稱可看此試算表
+https://docs.google.com/spreadsheets/d/1TSJ5A92Krl2jmSqq_j1yRk176DYd1hpx-IzOpmeWPNY/edit#gid=1344775722
 
 ------------------------111.09.19------------------------
 
