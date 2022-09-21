@@ -7,6 +7,12 @@ https://yji35j42012.github.io/AZUL_NEC_Project/scanning.html
 https://yji35j42012.github.io/AZUL_NEC_Project/index_pc.html
 https://yji35j42012.github.io/AZUL_NEC_Project/signUp_pc.html
 
+昨天花了點時間查詢
+線上目前找不到可以讓前端直接抓到的欄位資料
+需要透過server去抓取資料讓前端解析
+
+
+目前需要請您幫確認客戶那邊是否有server
 
 
 ------------------------111.09.19------------------------
