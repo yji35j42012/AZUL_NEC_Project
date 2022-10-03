@@ -7,6 +7,28 @@ https://yji35j42012.github.io/AZUL_NEC_Project/scanning.html
 https://yji35j42012.github.io/AZUL_NEC_Project/index_pc.html
 https://yji35j42012.github.io/AZUL_NEC_Project/signUp_pc.html
 
+
+
+------------------------111.10.03------------------------
+1.0 確認頁面 圓餅圖模組
+style資料夾內檔案有修改，請務必覆蓋檔案
+
+使用的套件為highcharts js
+https://www.highcharts.com/
+
+github可進行簡單測試
+https://yji35j42012.github.io/AZUL_NEC_Project/member.html
+
+畫面對應檔案名稱可看此試算表
+https://docs.google.com/spreadsheets/d/1TSJ5A92Krl2jmSqq_j1yRk176DYd1hpx-IzOpmeWPNY/edit#gid=1344775722
+
+------------------------111.10.03------------------------
+
+
+
+
+
+
 昨天花了點時間查詢
 線上目前找不到可以讓前端直接抓到的欄位資料
 需要透過server去抓取資料讓前端解析

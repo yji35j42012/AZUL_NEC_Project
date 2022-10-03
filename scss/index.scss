@@ -824,8 +824,18 @@ h2 {
         // .report_list_statistics
         &_statistics {
             position: relative;
-            padding: 35px 0 62px;
-
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 350px;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
             img {
                 width: 240px;
                 height: 240px;
@@ -842,8 +852,42 @@ h2 {
                 letter-spacing: normal;
                 color: #5e5e5e;
             }
+            .highcharts-credits,
+            .highcharts-title,
+            .highcharts-data-label-connector {
+                display: none !important;
+            }
+            
+            .highcharts-root{
+                position: absolute;
+                top: -50px;
+            }
         }
+        #circleContainer {
+            position: absolute;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // left: 0;
+            width: calc(100% + 10px);
 
+            // &::after {
+            //     content: "";
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     right: 0;
+            //     bottom: 0;
+            //     width: 100px;
+            //     height: 100px;
+            //     margin: auto;
+            //     background-color: #fff;
+            //     border-radius: 50%;
+            // }
+        }
+        .highcharts-series-group {
+            position: relative;
+        }
         // .report_list_exchangePic
         &_exchangePic {
             position: relative;
