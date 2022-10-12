@@ -95,7 +95,12 @@
 				</div>
 				<div class="report_list _w448px">
 					<div class="report_list_title">資產配置</div>
+					<!-- 圓餅圖修改範圍 start -->
 					<div class="report_list_statistics report_list_botBorder">
+						<div id="circleContainer"></div>
+					</div>
+					<!-- 圓餅圖修改範圍 end -->
+					<!-- <div class="report_list_statistics report_list_botBorder">
 						<img src="./images/chart.svg" alt="">
 						<span class="num" style="top:84px; left: 248px;">40%</span>
 						<span class="num" style="top:282px; left: 148px;">20%</span>
@@ -103,7 +108,7 @@
 						<span class="num" style="top:146px; left: -52px;">15%</span>
 						<span class="num" style="top:56px; left: -34px;">12%</span>
 						<span class="num" style="top: 0px; left: 57px;">13%</span>
-					</div>
+					</div> -->
 					<table class="report_table">
 						<tr>
 							<td width="50%">
@@ -230,6 +235,187 @@
 			</div>
 		</div>
 	</div>
+	<!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+	<script src="./js/jquery_min.js"></script>
+	<script src="./js/highcharts.js"></script>
+	<!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+	<script>
+		var year = 2022;
+		var olympic = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+		var normal = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+		var showXM = [0];
+		var xData = []
+		var showData = [];//趨勢圖資料
+		// 判斷月份天數
+		function daysTotal(month, year) {
+			var tmp = year % 4
+			if (tmp == 0) {
+				return olympic[month]
+			} else {
+				return normal[month]
+			}
+		}
+		// 篩入x軸月份
+		for (let i = 1; i < 13; i++) {
+			var getDayTotal = daysTotal(i - 1, year);
+			for (let j = 1; j < getDayTotal + 1; j++) {
+				if (j == 1) {
+					xData.push(year + "-" + i)
+				} else {
+					xData.push(year + "-" + i + "-" + j)
+				}
+			}
+			var pd = showXM[showXM.length - 1] + daysTotal(i - 1, year)
+			showXM.push(pd)
+		}
+
+		// 目前篩入假資料，這邊改成放入您所需的資料
+		for (let i = 0; i < xData.length; i++) {
+			var ran = Math.floor(Math.random() * 9) * 0.1 + Math.floor(Math.random() * 2) + 28
+			showData.push(ran)
+		}
+		console.log('showData', showData);
+
+		$(document).ready(function () {
+			var title = {};
+			var subtitle = {};
+			var chart = {
+				type: 'area',
+				scrollablePlotArea: {
+					minWidth: 700,
+					scrollPositionX: 1
+				},
+				spacingBottom: 15,
+				spacingTop: 10,
+				spacingLeft: 10,
+				spacingRight: 10,
+			};
+			var xAxis = {
+				scrollbar: {
+					enabled: true
+				},
+				tickPositions: showXM,
+				categories: xData,
+				plotBands: [
+					{
+						color: '#000000',
+					}
+				],
+				gridLineWidth: 1,
+
+			};
+			var yAxis = {
+				min: 28,
+				max: 32,
+				scrollbar: {
+					enabled: true
+				},
+				title: {
+					text: ''
+				},
+				tickmarkPlacement: 'on',
+				scrollbar: {
+					enabled: true,
+					showFull: false
+				}
+			};
+
+			var tooltip = {}
+
+			var legend = {
+				layout: 'vertical',
+				align: 'right',
+				verticalAlign: 'middle',
+				borderWidth: 0
+			};
+
+			var series = [
+				{
+					name: '',
+					data: showData,
+					lineColor: "#05097b",
+					fillColor: 'rgba(5,9,123,.15)',
+				},
+			];
+
+			var json = {};
+			json.chart = chart;
+			json.title = title;
+			json.subtitle = subtitle;
+			json.xAxis = xAxis;
+			json.yAxis = yAxis;
+			json.tooltip = tooltip;
+			json.legend = legend;
+			json.series = series;
+
+			$('#container').highcharts(json);
+		});
+
+		// 圓餅圖修改範圍 start 
+		var circleData = {
+			//圓餅圖對應顏色
+			color: ['#5686e8', '#61cfa3', '#65799b', '#f2c53f', '#dd745b', '#6fc2e3'],
+			//圓餅圖資料放置處
+			data: [
+				{ y: 40 },
+				{ y: 10 },
+				{ y: 10 },
+				{ y: 15 },
+				{ y: 12 },
+				{ y: 13 }
+			]
+		}
+		$(document).ready(function () {
+			Highcharts.setOptions({
+				colors: circleData.color
+			});
+			var chart = {
+				plotBackgroundColor: null,
+				plotBorderWidth: null,
+				plotShadow: false,
+				type: 'pie'
+			}
+
+			var accessibility = {
+				point: {
+					valueSuffix: '%'
+				}
+			}
+			var plotOptions = {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					animation: false,
+					dataLabels: {
+						enabled: true,
+						format: '{point.percentage:f} %',
+						// format: '{point.percentage:.1f} %', //會出現小數點
+						connectorColor: 'silver',
+						style: {
+							fontSize: '20px',
+							color: '#5e5e5e',
+							fontFamily: 'MicrosoftJhengHei',
+						},
+						distance: 3,//文字與圓餅圖距離
+					}
+				}
+			}
+			var series = [{
+				data: circleData.data,
+				size: '65%',
+				innerSize: "50%",
+			}]
+
+			var json = {};
+			json.chart = chart;
+			json.accessibility = accessibility;
+			json.plotOptions = plotOptions;
+			json.series = series;
+			$('#circleContainer').highcharts(json);
+		})
+
+		// 圓餅圖修改範圍 end 
+	</script>
 </body>
 
 </html>
