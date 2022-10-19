@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content=" width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv=" X-UA-Compatible" content=" ie=edge">
+    <title>首頁</title>
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+
+<body>
+    <div class="wrap home tw">
+        <div class="head">
+            <span class="head_logo">
+                <img src="../images/logo_s.png" alt="">
+            </span>
+            <span>2022/10/12 PM 12:26</span>
+        </div>
+        <div class="normal_content">
+            <h2>請選擇服務項目</h2>
+            <div class="normal_content_function">
+                <button id="madecard" class="normal_icon_btn _madecard">
+                    製證
+                </button>
+                <button class="normal_icon_btn _idlend">
+                    借證
+                </button>
+                <button class="normal_icon_btn _retuen">
+                    還證
+                </button>
+                <button class="normal_icon_btn _takeout">
+                    物品攜出
+                </button>
+                <button class="normal_icon_btn _others">
+                    其他服務
+                </button>
+            </div>
+        </div>
+        <div class="function">
+            <button class="normal_btn jpItem">日本語</button>
+            <button class="normal_btn enItem">English</button>
+            <button class="normal_btn twItem">繁體中文</button>
+            <button class="normal_btn _circle ">
+                <img class="icon_member" src="../images/icon_member.svg" alt="">
+            </button>
+        </div>
+        <div class="information">
+            <!-- 需要變紅色在class加上 text_red -->
+            <span class="msg_l msg_r text_red" data-msgl="卡片張數：" data-msgr="/100">26</span>
+            <span class="msg_l" data-msgl="色帶 ">0%</span>
+            <span class="msg_l text_red" data-msgl="護膜 ">0%</span>
+        </div>
+    </div>
+
+    <script>
+        var madecard = document.querySelector('#madecard');
+        madecard.onclick = function () {
+            location.href = 'choose.html';
+        }
+
+    </script>
+</body>
+
+</html>

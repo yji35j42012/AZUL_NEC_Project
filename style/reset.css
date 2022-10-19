@@ -4,7 +4,8 @@
 	list-style: none;
 	box-sizing: border-box;
 	font-size: 16px;
-	font-family: "Noto Sans", sans-serif;
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 	line-height: 1;
 }
 
@@ -43,16 +44,17 @@ caption {
 	font-size: 100%;
 	vertical-align: baseline;
 }
+
 html,
-body {
+body {	
 	width: 100%;
-	height: 100%;
-	background-color: #ffffff;
+	height: 100%;	
+	background-color: #e5e8e5;
 	font-size: 16px;
-	font-family: "Noto Sans TC", sans-serif;
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 	/* background: linear-gradient(157deg, #05097b 20%, #93d1ab); */
 }
-
 *:hover,
 *:focus,
 *:active {

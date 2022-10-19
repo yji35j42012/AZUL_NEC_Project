@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content=" width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv=" X-UA-Compatible" content=" ie=edge">
+    <title>證號輸入</title>
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+
+<body>
+    <div class="wrap tw">
+        <div class="head">
+            <span class="head_logo">
+                <img src="../images/logo_s.png" alt="">
+            </span>
+            <span>2022/10/12 PM 12:26</span>
+        </div>
+        <div class="info_content">
+            <ul class="step vat">
+                <li class="step_item ">
+                    <span class="step_item_num on">1</span>
+                    <span class="step_item_txt">輸入統一編號</span>
+                </li>
+                <li class="step_line"></li>
+                <li class="step_item">
+                    <span class="step_item_num on">2</span>
+                    <span class="step_item_txt">人臉辨識</span>
+                </li>
+                <li class="step_line"></li>
+                <li class="step_item">
+                    <span class="step_item_num">3</span>
+                    <span class="step_item_txt">卡片清單</span>
+                </li>
+                <li class="step_line"></li>
+                <li class="step_item">
+                    <span class="step_item_num">4</span>
+                    <span class="step_item_txt">取卡</span>
+                </li>
+            </ul>
+            <h2>啟動人臉辨識</h2>
+           
+        </div>
+        <div class="function">
+            <button id="back" class="normal_icon_btn _prev">
+                上一步
+            </button>
+            <button id="home" class="normal_icon_btn _home">
+                回首頁
+            </button>
+            <button class="normal_icon_btn _next">
+                下一步
+            </button>
+        </div>
+
+        <!-- 打開彈窗在class加on -->
+        <div id="alert" class="alert">
+            <div class="alert_box">
+                <div class="alert_txt">
+                    未搜尋到該ID <br>
+                    請洽接待員工
+                </div>
+                <div class="alert_function">
+                    <button class="normal_btn _red">回首頁</button>
+                    <button id="key_clear" class="normal_btn">重新輸入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/keybord.js"></script>
+    <script>
+        var back = document.querySelector('#back');
+        back.onclick = function () {
+            location.href = 'key_identity.html';
+        }
+        var home = document.querySelector('#home');
+        home.onclick = function () {
+            location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>
