@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="38px" viewBox="0 0 43 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>keyboard_delete</title>
+    <defs>
+        <filter x="-7.1%" y="-9.7%" width="114.1%" height="135.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.199082168 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.身分證號" transform="translate(-905.000000, -1031.000000)" fill="#000000">
+            <g id="keyboard_boarder备份-6" filter="url(#filter-1)" transform="translate(101.000000, 749.000000)">
+                <g id="Group" transform="translate(792.000000, 266.000000)">
+                    <path d="M43,24 L28.1,24 C27.4,24 26.8,24.3 26.4,24.9 L21,33 L26.4,41.1 C26.8,41.6 27.4,42 28.1,42 L43,42 C44.1,42 45,41.1 45,40 L45,26 C45,24.9 44.1,24 43,24 L43,24 Z M40,36.6 L38.6,38 L35,34.4 L31.4,38 L30,36.6 L33.6,33 L30,29.4 L31.4,28 L35,31.6 L38.6,28 L40,29.4 L36.4,33 L40,36.6 L40,36.6 Z" id="keyboard_delete"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

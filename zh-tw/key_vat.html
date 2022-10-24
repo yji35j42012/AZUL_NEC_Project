@@ -103,7 +103,7 @@
             <button id="home" class="normal_icon_btn _home">
                 回首頁
             </button>
-            <button class="normal_icon_btn _next">
+            <button id="next" class="normal_icon_btn _next">
                 下一步
             </button>
         </div>
@@ -133,10 +133,11 @@
             location.href = 'index.html';
         }
 
+        var next = document.querySelector('#next');
         function from_face() {
             location.href = 'face_vat.html';
         }
-
+        next.addEventListener('click', from_face);
 
     </script>
 </body>

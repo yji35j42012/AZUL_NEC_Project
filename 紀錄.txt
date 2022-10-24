@@ -7,6 +7,37 @@ https://yji35j42012.github.io/AZUL_NEC_Project/scanning.html
 https://yji35j42012.github.io/AZUL_NEC_Project/index_pc.html
 https://yji35j42012.github.io/AZUL_NEC_Project/signUp_pc.html
 
+------------------------111.10.20------------------------
+自助發卡機
+首頁、主畫面、流程選擇(本人/代領)、資料輸入(身分證/統編)包含錯誤提醒畫面
+
+畫面已寄出，因檔案內有js檔案
+因此我先放在雲端提供連結下載
+https://drive.google.com/file/d/1v7s95mEbGpvBQJw9KZ-j9NNiuCjQP8si/view?usp=sharing
+
+github可進行簡單測試
+https://yji35j42012.github.io/AZUL_NEC_Project/zh-tw/
+
+首頁
+https://yji35j42012.github.io/AZUL_NEC_Project/zh-tw/
+主畫面
+https://yji35j42012.github.io/AZUL_NEC_Project/zh-tw/home.html
+流程選擇(本人/代領)
+https://yji35j42012.github.io/AZUL_NEC_Project/zh-tw/choose.html
+資料輸入(身分證)
+https://yji35j42012.github.io/AZUL_NEC_Project/zh-tw/key_identity.html
+資料輸入(統編)
+https://yji35j42012.github.io/AZUL_NEC_Project/zh-tw/key_vat.html
+
+畫面對應檔案名稱可看此試算表
+https://docs.google.com/spreadsheets/d/1TSJ5A92Krl2jmSqq_j1yRk176DYd1hpx-IzOpmeWPNY/edit#gid=1232969713
+
+補充:上次提到顯示紅色狀態的部分如圖片在
+class內部加上 text_red 該文字就會變成紅色
+
+
+
+------------------------111.10.20------------------------
 
 
 ------------------------111.10.03------------------------
@@ -18,6 +49,10 @@ https://www.highcharts.com/
 
 github可進行簡單測試
 https://yji35j42012.github.io/AZUL_NEC_Project/member.html
+
+
+
+
 
 畫面對應檔案名稱可看此試算表
 https://docs.google.com/spreadsheets/d/1TSJ5A92Krl2jmSqq_j1yRk176DYd1hpx-IzOpmeWPNY/edit#gid=1344775722

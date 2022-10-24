@@ -42,7 +42,21 @@
                 </li>
             </ul>
             <h2>啟動人臉辨識</h2>
-           
+            <div class="facebox"></div>
+            <div class="reciprocal">
+                倒數
+                <!-- 書需要停止轉圈圈在class加on -->
+                <span id="reciprocal_time" class="reciprocal_time">5</span>
+                秒
+            </div>
+            <ul class="face_note">
+                <li class="face_note_item" data-note="建議配戴淺色口罩">
+                    <img src="../images/icon_mask.svg" alt="">
+                </li>
+                <li class="face_note_item" data-note="瀏海盡量撥開">
+                    <img src="../images/icon_face.svg" alt="">
+                </li>
+            </ul>
         </div>
         <div class="function">
             <button id="back" class="normal_icon_btn _prev">
@@ -51,21 +65,25 @@
             <button id="home" class="normal_icon_btn _home">
                 回首頁
             </button>
-            <button class="normal_icon_btn _next">
+            <button id="next" class="normal_icon_btn _next">
                 下一步
             </button>
         </div>
 
-        <!-- 打開彈窗在class加on -->
+        <!-- 辨識失敗彈窗，打開彈窗在class加on，錯誤三次多加face_max_fail -->
         <div id="alert" class="alert">
             <div class="alert_box">
-                <div class="alert_txt">
-                    未搜尋到該ID <br>
-                    請洽接待員工
+                <div class="alert_txt unmax_fail">人臉辨識失敗</div>
+                <div class="alert_txt max_fail">人臉辨識失敗3次</div>
+
+                <div class="alert_icon">
+                    <img src="../images/icon_faceid_fail.svg" alt="">
                 </div>
+                <div class="alert_txt unmax_fail">請面向攝影機並重新辨識</div>
+                <div class="alert_txt max_fail">請洽中控室協助</div>
                 <div class="alert_function">
-                    <button class="normal_btn _red">回首頁</button>
-                    <button id="key_clear" class="normal_btn">重新輸入</button>
+                    <button id="alert_home" class="normal_btn _red ">回首頁</button>
+                    <button id="reface" class="normal_btn unmax_fail">重新辨識</button>
                 </div>
             </div>
         </div>
@@ -79,6 +97,47 @@
         var home = document.querySelector('#home');
         home.onclick = function () {
             location.href = 'index.html';
+        }
+        var alert_home = document.querySelector('#alert_home');
+        alert_home.onclick = function () {
+            location.href = 'index.html';
+        }
+        var next = document.querySelector('#next');
+        next.onclick = function () {
+            location.href = 'getlist_vat.html';
+        }
+       
+        var alert = document.querySelector("#alert");
+        var reface = document.querySelector("#reface");
+        var reciprocal_time = document.querySelector('#reciprocal_time');
+        var time = 5;
+        var fail_count = 0;
+        var intervalId = setInterval(intervaHandler, 1000);
+
+        function intervaHandler() {
+            if (time !== 0) {
+                time--
+                reciprocal_time.innerHTML = time;
+            } else {
+                clearInterval(intervalId);
+                reciprocal_time.classList.add('on');
+                // 如辨識失敗加上on
+                alert.classList.add('on');
+                if (fail_count == 2) {
+                    alert.classList.add('face_max_fail');
+                } else {
+                    // 錯誤次數
+                    fail_count++;
+                }
+            }
+        }
+
+        reface.onclick = function () {
+            alert.classList.remove('on');
+            reciprocal_time.classList.remove('on');
+            time = 5;
+            reciprocal_time.innerHTML = time;
+            intervalId = setInterval(intervaHandler, 1000);
         }
     </script>
 </body>
