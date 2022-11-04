@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="43px" viewBox="0 0 36 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_prev</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.選擇本人代領" transform="translate(-108.000000, -1694.000000)" fill-rule="nonzero">
+            <g id="编组备份" transform="translate(60.000000, 1658.000000)">
+                <g id="icon_prev" transform="translate(66.000000, 57.500000) scale(-1, 1) translate(-66.000000, -57.500000) translate(48.000000, 36.000000)">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="36" height="43"></rect>
+                    <path d="M22.374,21.93 L8.388,38.184 C7.56,39.1515 7.56,40.6995 8.388,41.6455 C9.216,42.613 10.548,42.613 11.376,41.6455 L26.856,23.6715 C27.684,22.704 27.684,21.156 26.856,20.21 L11.376,2.236 C10.962,1.7415 10.422,1.505 9.882,1.505 C9.342,1.505 8.802,1.7415 8.388,2.2145 C7.56,3.182 7.56,4.73 8.388,5.676 L22.374,21.93 Z" id="路径" fill="#E60012"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
