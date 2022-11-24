@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content=" width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv=" X-UA-Compatible" content=" ie=edge">
+    <title>廠商編號輸入</title>
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+
+<body>
+    <div class="wrap tw">
+        <div class="head">
+            <span class="head_logo">
+                <img src="../images/logo_s.png" alt="">
+            </span>
+            <span>2022/10/12 PM 12:26</span>
+        </div>
+        <div class="info_content">
+            <ul class="step">
+                <li class="step_item ">
+                    <span class="step_item_num on">1</span>
+                    <span class="step_item_txt w192px">輸入廠商編號</span>
+                </li>
+                <li class="step_line"></li>
+                <li class="step_item">
+                    <span class="step_item_num">2</span>
+                    <span class="step_item_txt">人臉辨識</span>
+                </li>
+                <li class="step_line"></li>
+                <li class="step_item">
+                    <span class="step_item_num">3</span>
+                    <span class="step_item_txt">資料確認</span>
+                </li>
+                <li class="step_line"></li>
+                <li class="step_item">
+                    <span class="step_item_num">4</span>
+                    <span class="step_item_txt">取卡</span>
+                </li>
+            </ul>
+            <h2>請輸入廠商編號</h2>
+            <!-- 如果證號輸入錯誤 在class加上 _error -->
+            <div id="input_box" class="input_box">
+                <input id="key_input" type="text" readonly>
+                <button id="key_submit" class="input_box_submit" data-submit="company_submit">送出</button>
+                <p class="input_box_wrongTxt">請輸入正確的廠商編號</p>
+            </div>
+            <div class="keybox">
+                <div class="keybox_alphabet">
+                    <button class="keybox_btn" data-keynum="A">A</button>
+                    <button class="keybox_btn" data-keynum="B">B</button>
+                    <button class="keybox_btn" data-keynum="C">C</button>
+                    <button class="keybox_btn" data-keynum="D">D</button>
+                    <button class="keybox_btn" data-keynum="E">E</button>
+                    <button class="keybox_btn" data-keynum="F">F</button>
+                    <button class="keybox_btn" data-keynum="G">G</button>
+                    <button class="keybox_btn" data-keynum="H">H</button>
+                    <button class="keybox_btn" data-keynum="I">I</button>
+                    <button class="keybox_btn" data-keynum="J">J</button>
+                    <button class="keybox_btn" data-keynum="K">K</button>
+                    <button class="keybox_btn" data-keynum="L">L</button>
+                    <button class="keybox_btn" data-keynum="M">M</button>
+                    <button class="keybox_btn" data-keynum="N">N</button>
+                    <button class="keybox_btn" data-keynum="O">O</button>
+                    <button class="keybox_btn" data-keynum="P">P</button>
+                    <button class="keybox_btn" data-keynum="Q">Q</button>
+                    <button class="keybox_btn" data-keynum="R">R</button>
+                    <button class="keybox_btn" data-keynum="S">S</button>
+                    <button class="keybox_btn" data-keynum="T">T</button>
+                    <button class="keybox_btn" data-keynum="U">U</button>
+                    <button class="keybox_btn" data-keynum="V">V</button>
+                    <button class="keybox_btn" data-keynum="W">W</button>
+                    <button class="keybox_btn" data-keynum="X">X</button>
+                    <button class="keybox_btn" data-keynum="Y">Y</button>
+                    <button class="keybox_btn" data-keynum="Z">Z</button>
+                    <button class="keybox_btn _double" data-keynum="submit_company">送出</button>
+                </div>
+                <div class="keybox_num">
+                    <button class="keybox_btn" data-keynum="1">1</button>
+                    <button class="keybox_btn" data-keynum="2">2</button>
+                    <button class="keybox_btn" data-keynum="3">3</button>
+                    <button class="keybox_btn" data-keynum="4">4</button>
+                    <button class="keybox_btn" data-keynum="5">5</button>
+                    <button class="keybox_btn" data-keynum="6">6</button>
+                    <button class="keybox_btn" data-keynum="7">7</button>
+                    <button class="keybox_btn" data-keynum="8">8</button>
+                    <button class="keybox_btn" data-keynum="9">9</button>
+                    <button class="keybox_btn _clear" data-keynum="clear">重填</button>
+                    <button class="keybox_btn" data-keynum="0">0</button>
+                    <button class="keybox_btn _del" data-keynum="del">
+                        <img src="../images/keyboard_delete.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="function">
+            <button id="back" class="normal_icon_btn _prev">
+                上一步
+            </button>
+            <button id="home" class="normal_icon_btn _home">
+                回首頁
+            </button>
+            <button id="next" class="normal_icon_btn _next">
+                下一步
+            </button>
+        </div>
+
+        <!-- 打開彈窗在class加on -->
+        <div id="alert" class="alert">
+            <div class="alert_box">
+                <div class="alert_txt">
+                    未搜尋到該廠商編號 <br>
+                    請洽接待員工
+                </div>
+                <div class="alert_function">
+                    <button id="alert_home" class="normal_btn _red">回首頁</button>
+                    <button id="key_clear" class="normal_btn">重新輸入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/keybord.js"></script>
+    <script>
+        var back = document.querySelector('#back');
+        back.onclick = function () {
+            history.go(-1);
+        }
+        var home = document.querySelector('#home');
+        home.onclick = function () {
+            location.href = 'index.html';
+        }
+        var alert_home = document.querySelector('#alert_home');
+        alert_home.onclick = function () {
+            location.href = 'index.html';
+        }
+        var next = document.querySelector('#next');
+        function from_face() {
+            location.href = 'face_company.html';
+        }        
+        next.addEventListener('click', from_face);
+
+        
+    </script>
+</body>
+
+</html>

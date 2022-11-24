@@ -25,14 +25,14 @@
                 <button id="madecard" class="normal_icon_btn _madecard">
                     製證
                 </button>
-                <button class="normal_icon_btn _idlend">
+                <button id="borrowcard" class="normal_icon_btn _idlend">
                     借證
                 </button>
                 <button class="normal_icon_btn _retuen">
                     還證
                 </button>
                 <button class="normal_icon_btn _takeout">
-                    物品攜出
+                    物品攜入/出
                 </button>
                 <button class="normal_icon_btn _others">
                     其他服務
@@ -60,7 +60,12 @@
         madecard.onclick = function () {
             location.href = 'choose.html';
         }
+        var borrowcard = document.querySelector('#borrowcard');
+        borrowcard.onclick = function () {
+            location.href = 'choose_borrow.html';
+        }
 
+        
     </script>
 </body>
 
