@@ -1,4 +1,20 @@
 
+
+@Alex 施 請收，我的email：will@azul.com.tw
+
+------------------------111.11.25------------------------
+自助發卡機-借證相關功能畫面已寄出
+因檔案內有js檔案，因此我先放在雲端提供連結下載
+
+https://drive.google.com/file/d/10yr3E3RqZu0RnQgVozBIRtKbS-tIonnM/view?usp=sharing
+github可進行簡單測試
+畫面對應檔案名稱可看此試算表
+https://docs.google.com/spreadsheets/d/1TSJ5A92Krl2jmSqq_j1yRk176DYd1hpx-IzOpmeWPNY/edit#gid=1232969713
+
+------------------------111.11.25------------------------
+
+
+
 https://yji35j42012.github.io/AZUL_NEC_Project/withdrawal.html	
 https://yji35j42012.github.io/AZUL_NEC_Project/withdrawal.html	
 https://yji35j42012.github.io/AZUL_NEC_Project/success.html	
