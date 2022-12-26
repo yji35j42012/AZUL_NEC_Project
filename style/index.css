@@ -291,6 +291,10 @@
   width: 192px;
 }
 
+.step_item_txt.w200px {
+  width: 200px;
+}
+
 .vat .step_item_txt {
   width: 192px;
 }
@@ -772,6 +776,11 @@ h2 .text_red {
 
 h2 + .identity_info_card {
   margin-top: 100px;
+}
+
+h2 + .takeout_pic {
+  width: 443px;
+  margin: 131px auto 0;
 }
 
 h3 {

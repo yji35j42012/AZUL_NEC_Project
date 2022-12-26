@@ -31,7 +31,7 @@
                 <button class="normal_icon_btn _retuen">
                     還證
                 </button>
-                <button class="normal_icon_btn _takeout">
+                <button id="takeout" class="normal_icon_btn _takeout">
                     物品攜入/出
                 </button>
                 <button class="normal_icon_btn _others">
@@ -64,8 +64,11 @@
         borrowcard.onclick = function () {
             location.href = 'choose_borrow.html';
         }
+        var borrowcard = document.querySelector('#takeout');
+        borrowcard.onclick = function () {
+            location.href = 'choose_takeout.html';
+        }
 
-        
     </script>
 </body>
 
