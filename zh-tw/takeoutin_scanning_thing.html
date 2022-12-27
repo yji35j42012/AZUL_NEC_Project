@@ -56,12 +56,9 @@
 			<button id="home" class="normal_icon_btn _home">
 				回首頁
 			</button>
-			<button id="next" class="normal_icon_btn _next">
-				下一步
-			</button>
 		</div>
 		<!-- 取卡異常彈窗，打開彈窗在class加on -->
-		<div id="alert" class="alert">
+		<div id="alert" class="alert ">
 			<div class="alert_box">
 				<div class="alert_txt">未搜尋到該放行單資料</div>
 				<div class="alert_txt">請洽中控室協助</div>
@@ -81,10 +78,7 @@
 		home.onclick = function () {
 			location.href = 'index.html';
 		}
-		var next = document.querySelector('#next');
-		next.onclick = function () {
-			location.href = '.html';
-		}
+		
 		var alert_home = document.querySelector('#alert_home');
 		var alert = document.querySelector("#alert");
 		alert_home.onclick = function () {

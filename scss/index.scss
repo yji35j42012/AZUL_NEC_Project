@@ -242,10 +242,10 @@
 
             &.w192px {
                 width: 192px;
-			}
-			&.w200px {
+            }
+            &.w200px {
                 width: 200px;
-			}
+            }
             @at-root .vat & {
                 width: 192px;
             }
@@ -380,8 +380,7 @@
     // .identity_info_card
     &_card {
         width: 307px;
-		margin: auto;
-		
+        margin: auto;
     }
 
     & + .identity_info_face,
@@ -562,6 +561,10 @@
     & + .reciprocal {
         margin-top: 30px;
     }
+    &.w400px {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 .reciprocal {
@@ -688,8 +691,15 @@ h2 {
         margin-top: 100px;
     }
     & + .takeout_pic {
-		width: 443px;
+        width: 443px;
         margin: 131px auto 0;
+
+        &.w520px {
+            width: 520px;
+        }
+        &.w550px {
+            width: 550px;
+        }
     }
 }
 
@@ -714,6 +724,14 @@ h3 {
 
     & + .vat_info {
         margin-top: 32px;
+    }
+    & + .takeout_pic {
+        width: 550px;
+        margin: 30px auto 0;
+
+        & + .facebox {
+            margin-top: 60px;
+        }
     }
 }
 

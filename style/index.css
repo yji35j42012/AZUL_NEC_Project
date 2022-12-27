@@ -609,6 +609,11 @@
   margin-top: 30px;
 }
 
+.facebox.w400px {
+  width: 400px;
+  height: 400px;
+}
+
 .reciprocal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -783,6 +788,14 @@ h2 + .takeout_pic {
   margin: 131px auto 0;
 }
 
+h2 + .takeout_pic.w520px {
+  width: 520px;
+}
+
+h2 + .takeout_pic.w550px {
+  width: 550px;
+}
+
 h3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,6 +827,15 @@ h3::after {
 
 h3 + .vat_info {
   margin-top: 32px;
+}
+
+h3 + .takeout_pic {
+  width: 550px;
+  margin: 30px auto 0;
+}
+
+h3 + .takeout_pic + .facebox {
+  margin-top: 60px;
 }
 
 .txtl {
