@@ -140,6 +140,14 @@
   margin-top: 90px;
 }
 
+.return .info_content {
+  padding: 45px 60px 0;
+}
+
+.return .info_content.visitors {
+  padding: 300px 60px 0;
+}
+
 .head {
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -235,6 +243,10 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 187px;
+}
+
+.step.mb85px {
+  margin-bottom: 85px;
 }
 
 .step_item {
@@ -428,6 +440,11 @@
   margin: auto;
 }
 
+.identity_info_card.w400px {
+  width: 400px;
+  height: 400px;
+}
+
 .identity_info + .identity_info_face,
 .identity_info + .identity_info_card {
   margin-top: 100px;
@@ -607,6 +624,7 @@
 
 .facebox + .reciprocal {
   margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 .facebox.w400px {
@@ -783,6 +801,10 @@ h2 + .identity_info_card {
   margin-top: 100px;
 }
 
+h2 + .identity_info_card.mt128px {
+  margin-top: 128px;
+}
+
 h2 + .takeout_pic {
   width: 443px;
   margin: 131px auto 0;
@@ -794,6 +816,11 @@ h2 + .takeout_pic.w520px {
 
 h2 + .takeout_pic.w550px {
   width: 550px;
+}
+
+.return h2 + h3:not(.visitors) {
+  height: 162px;
+  margin-top: 30px;
 }
 
 h3 {
@@ -821,6 +848,14 @@ h3 {
   color: #000;
 }
 
+h3.mt20px {
+  margin-top: 20px;
+}
+
+h3.mt30px {
+  margin-top: 30px;
+}
+
 h3::after {
   content: attr(data-txt);
 }
@@ -835,7 +870,18 @@ h3 + .takeout_pic {
 }
 
 h3 + .takeout_pic + .facebox {
-  margin-top: 60px;
+  margin-top: 50px;
+}
+
+.return h3 > p {
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
 }
 
 .txtl {
@@ -1125,6 +1171,30 @@ td.font_bold {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 34px;
+}
+
+.return_card {
+  margin-top: 40px;
+  font-family: NotoSansCJKtc;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.return_pic {
+  width: 300px;
+  height: 1010px;
+  margin: 40px auto 60px;
+}
+
+.visitors .return_pic {
+  width: 520px;
+  height: 420px;
+  margin-top: 130px;
 }
 
 .msg_l::before {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name=" viewport" content=" width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv=" X-UA-Compatible" content=" ie=edge">
-    <title>攜入拍照確認</title>
+    <title>攜出資料確認</title>
     <link rel="stylesheet" href="../style/font.css">
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/index.css">
@@ -35,7 +35,7 @@
                 </li>
                 <li class="step_line"></li>
                 <li class="step_item">
-                    <span class="step_item_num on">3</span>
+                    <span class="step_item_num">3</span>
                     <span class="step_item_txt">拍照確認</span>
                 </li>
                 <li class="step_line"></li>
@@ -44,18 +44,18 @@
                     <span class="step_item_txt">完成</span>
                 </li>
             </ul>
-            <h2>拍照確認</h2>
-            <h3>請轉開鏡頭，確認設備於鏡頭畫面內</h3>
-
-            <div class="takeout_pic w550px">
-                <img src="../images/img_scan.svg" alt="">
-            </div>
-            <div class="facebox w400px"></div>
-            <div class="reciprocal">
-                倒數
-                <!-- 書需要停止轉圈圈在class加on -->
-                <span id="reciprocal_time" class="reciprocal_time">5</span>
-                秒
+            <h2>攜出人名跟品項資料確認</h2>
+            <div class="identity_info">
+                <table class="identity_info_table">
+                    <tr>
+                        <td width="40%">攜出人名：</td>
+                        <td width="60%">陳大明</td>
+                    </tr>
+                    <tr>
+                        <td>攜出品項：</td>
+                        <td>發卡機</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="function _jufe">
@@ -77,43 +77,13 @@
         }
         var next = document.querySelector('#next');
         next.onclick = function () {
-            location.href = 'teakoutin_photograph.html';
+            location.href = 'teakout_photograph.html';
         }
         var home = document.querySelector('#home');
         home.onclick = function () {
             location.href = 'index.html';
         }
 
-        var reface = document.querySelector("#reface");
-        var reciprocal_time = document.querySelector('#reciprocal_time');
-        var time = 5;
-        var fail_count = 0;
-        var intervalId = setInterval(intervaHandler, 1000);
-        function intervaHandler() {
-            if (time !== 0) {
-                time--
-                reciprocal_time.innerHTML = time;
-            } else {
-                clearInterval(intervalId);
-                reciprocal_time.classList.add('on');
-                // 如辨識失敗加上on
-                // alert.classList.add('on');
-                if (fail_count == 2) {
-                    // alert.classList.add('face_max_fail');
-                } else {
-                    // 錯誤次數
-                    fail_count++;
-                }
-            }
-        }
-
-        reface.onclick = function () {
-            alert.classList.remove('on');
-            reciprocal_time.classList.remove('on');
-            time = 5;
-            reciprocal_time.innerHTML = time;
-            intervalId = setInterval(intervaHandler, 1000);
-        }
     </script>
 </body>
 

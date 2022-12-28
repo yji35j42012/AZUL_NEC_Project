@@ -126,6 +126,13 @@
             margin-top: 90px;
         }
     }
+
+    @at-root .return & {
+        padding: 45px 60px 0;
+        &.visitors{
+            padding: 300px 60px 0;
+        }
+    }
 }
 
 .head {
@@ -200,7 +207,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 187px;
-
+    &.mb85px {
+        margin-bottom: 85px;
+    }
     // .step_item
     &_item {
         position: relative;
@@ -381,6 +390,10 @@
     &_card {
         width: 307px;
         margin: auto;
+        &.w400px {
+            width: 400px;
+            height: 400px;
+        }
     }
 
     & + .identity_info_face,
@@ -560,6 +573,7 @@
 
     & + .reciprocal {
         margin-top: 30px;
+        margin-bottom: 60px;
     }
     &.w400px {
         width: 400px;
@@ -689,6 +703,9 @@ h2 {
     }
     & + .identity_info_card {
         margin-top: 100px;
+        &.mt128px {
+            margin-top: 128px;
+        }
     }
     & + .takeout_pic {
         width: 443px;
@@ -699,6 +716,12 @@ h2 {
         }
         &.w550px {
             width: 550px;
+        }
+    }
+    @at-root .return & {
+        & + h3:not(.visitors) {
+            height: 162px;
+            margin-top: 30px;
         }
     }
 }
@@ -717,7 +740,12 @@ h3 {
     letter-spacing: normal;
     text-align: center;
     color: #000;
-
+    &.mt20px {
+        margin-top: 20px;
+    }
+    &.mt30px {
+        margin-top: 30px;
+    }
     &::after {
         content: attr(data-txt);
     }
@@ -730,7 +758,19 @@ h3 {
         margin: 30px auto 0;
 
         & + .facebox {
-            margin-top: 60px;
+            margin-top: 50px;
+        }
+    }
+    @at-root .return & {
+        > p {
+            font-size: 36px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000;
         }
     }
 }
@@ -1020,12 +1060,31 @@ td.font_bold {
         margin-left: 34px;
     }
 }
-
-// .icon{
-//     display: inline-block;
-//     width: 64px;
-//     height: 64px;
-// }
+.return {
+    //.return_card
+    &_card {
+        margin-top: 40px;
+        font-family: NotoSansCJKtc;
+        font-size: 36px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+    }
+    //.return_pic
+    &_pic {
+        width: 300px;
+        height: 1010px;
+        margin: 40px auto 60px;
+        @at-root .visitors &{
+            width: 520px;
+            height: 420px;
+            margin-top: 130px;
+        }
+    }
+}
 
 .msg_l::before {
     content: attr(data-msgl);

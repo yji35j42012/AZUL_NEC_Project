@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content=" width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv=" X-UA-Compatible" content=" ie=edge">
+    <title>快速還卡</title>
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+
+<body>
+    <div class="wrap return tw">
+        <div class="head">
+            <span class="head_logo">
+                <img src="../images/logo_s.png" alt="">
+            </span>
+            <span>2022/10/12 PM 12:26</span>
+        </div>
+        <div class="info_content">
+            <h2>快速還卡，請插入卡片</h2>
+            <h3>
+                <p>若持有多張卡片，請分別插入卡片。</p>
+                <p>插入第一張卡片，待處理完後請再插入第二張卡片。</p>
+                <p>持有卡片全部投入後請按“<span class="text_red">下一步”</span></p>
+            </h3>
+            <div class="return_card msg_l text_red" data-msgl="已投入卡片數量：">10</div>
+            <div class="return_pic">
+                <img src="../images/img_return.svg" alt="">
+            </div>
+        </div>
+        <div class="function">
+            <button id="back" class="normal_icon_btn _prev">
+                上一步
+            </button>
+            <button id="home" class="normal_icon_btn _home">
+                回首頁
+            </button>
+            <button id="next" class="normal_icon_btn _next">
+                下一步
+            </button>
+        </div>
+
+        <!-- 打開彈窗在class加on -->
+        <div id="alert" class="alert">
+            <div class="alert_box">
+                <div class="alert_txt">
+                    未搜尋到該統一編號 <br>
+                    請洽接待員工
+                </div>
+                <div class="alert_function">
+                    <button class="normal_btn _red">回首頁</button>
+                    <button id="key_clear" class="normal_btn">重新輸入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var back = document.querySelector('#back');
+        back.onclick = function () {
+            history.go(-1);
+        }
+        var home = document.querySelector('#home');
+        home.onclick = function () {
+            location.href = 'index.html';
+        }
+
+        var next = document.querySelector('#next');
+        function from_face() {
+            location.href = 'face_vat.html';
+        }
+        next.addEventListener('click', from_face);
+
+    </script>
+</body>
+
+</html>

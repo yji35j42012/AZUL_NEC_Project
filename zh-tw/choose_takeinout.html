@@ -22,8 +22,8 @@
 		<div class="normal_content">
 			<h2>請選擇物品<span class="text_red">攜入</span>或<span class="text_red">攜出</span></h2>
 			<div class="normal_content_function">
-				<button id="takeout_in" class="normal_btn">物品攜入</button>
-				<button id="" class="normal_btn">物品攜出</button>
+				<button id="takein" class="normal_btn">物品攜入</button>
+				<button id="takeout" class="normal_btn">物品攜出</button>
 			</div>
 		</div>
 		<div class="function _jufs">
@@ -45,9 +45,13 @@
 		home.onclick = function () {
 			location.href = 'index.html';
 		}
-		var takeout_in = document.querySelector('#takeout_in');
-		takeout_in.onclick = function () {
-			location.href = 'takeoutin_scanning_thing.html';
+		var takein = document.querySelector('#takein');
+		takein.onclick = function () {
+			location.href = 'takein_scanning_thing.html';
+		}
+		var takeout = document.querySelector('#takeout');
+		takeout.onclick = function () {
+			location.href = 'takeout_scanning_thing.html';
 		}
 	</script>
 </body>

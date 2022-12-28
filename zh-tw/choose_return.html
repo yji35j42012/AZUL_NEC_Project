@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content=" width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv=" X-UA-Compatible" content=" ie=edge">
+    <title>選擇還卡</title>
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+
+<body>
+    <div class="wrap tw">
+        <div class="head">
+            <span class="head_logo">
+                <img src="../images/logo_s.png" alt="">
+            </span>
+            <span>2022/10/12 PM 12:26</span>
+        </div>
+        <div class="normal_content">
+            <h2>請選擇<span class="text_red">廠商、員工還證</span>或<span class="text_red">訪客還證</span></h2>
+            <div class="normal_content_function">
+                <button id="return_company" class="normal_btn">廠商、員工還證</button>
+                <button id="return_visitors" class="normal_btn">訪客還證</button>
+            </div>
+        </div>
+        <div class="function _jufs">
+            <button id="back" class="normal_icon_btn _prev">
+                上一步
+            </button>
+            <button id="home" class="normal_icon_btn _home">
+                回首頁
+            </button>
+        </div>
+    </div>
+
+    <script>
+        var home = document.querySelector('#home');
+        var back = document.querySelector('#back');
+        back.onclick = function () {
+            history.go(-1);
+        }
+        home.onclick = function () {
+            location.href = 'index.html';
+        }
+        var return_company = document.querySelector('#return_company');
+        return_company.onclick = function () {
+            location.href = 'return_company.html';
+        }
+        var return_visitors = document.querySelector('#return_visitors');
+        return_visitors.onclick = function () {
+            location.href = 'return_visitors.html';
+        }
+    </script>
+</body>
+
+</html>

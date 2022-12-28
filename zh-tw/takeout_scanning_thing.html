@@ -56,6 +56,9 @@
 			<button id="home" class="normal_icon_btn _home">
 				回首頁
 			</button>
+            <button id="next" class="normal_icon_btn _next">
+                下一步
+            </button>
 		</div>
 		<!-- 取卡異常彈窗，打開彈窗在class加on -->
 		<div id="alert" class="alert ">
@@ -78,7 +81,10 @@
 		home.onclick = function () {
 			location.href = 'index.html';
 		}
-		
+		var next = document.querySelector('#next');
+        next.onclick = function () {
+            location.href = 'takeout_scanning_idcard.html';
+        }
 		var alert_home = document.querySelector('#alert_home');
 		var alert = document.querySelector("#alert");
 		alert_home.onclick = function () {
