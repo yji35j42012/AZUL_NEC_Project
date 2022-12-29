@@ -129,7 +129,8 @@
 
     @at-root .return & {
         padding: 45px 60px 0;
-        &.visitors{
+        &.visitors,
+        &.returnCard {
             padding: 300px 60px 0;
         }
     }
@@ -1078,10 +1079,14 @@ td.font_bold {
         width: 300px;
         height: 1010px;
         margin: 40px auto 60px;
-        @at-root .visitors &{
+        @at-root .visitors & {
             width: 520px;
             height: 420px;
             margin-top: 130px;
+        }
+        @at-root .returnCard & {
+            width: 400px;
+            margin-top: 210px;
         }
     }
 }
