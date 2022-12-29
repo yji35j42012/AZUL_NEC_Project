@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content=" width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv=" X-UA-Compatible" content=" ie=edge">
+    <title>本人取卡</title>
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+
+<body>
+    <div class="wrap tw">
+        <div class="head">
+            <span class="head_logo">
+                <img src="../images/logo_s.png" alt="">
+            </span>
+            <span>2022/10/12 PM 12:26</span>
+        </div>
+        <div class="info_content">
+            <ul class="step">
+                <li class="step_item ">
+                    <span class="step_item_num on">1</span>
+                    <span class="step_item_txt">輸入身分證字號</span>
+                </li>
+                <li class="step_line"></li>
+                <li class="step_item">
+                    <span class="step_item_num on">2</span>
+                    <span class="step_item_txt">人臉辨識</span>
+                </li>
+                <li class="step_line"></li>
+                <li class="step_item">
+                    <span class="step_item_num on">3</span>
+                    <span class="step_item_txt">資料確認</span>
+                </li>
+                <li class="step_line"></li>
+                <li class="step_item">
+                    <span class="step_item_num on">4</span>
+                    <span class="step_item_txt">取卡</span>
+                </li>
+            </ul>
+            <h2>請領取卡片</h2>
+            <div class="identity_info">
+                <table class="identity_info_table">
+                    <tr>
+                        <td width="40%">公司名稱：</td>
+                        <td width="60%">恩益禧股份有限公司</td>
+                    </tr>
+                    <tr>
+                        <td>廠商編號：</td>
+                        <td>A8672390</td>
+                    </tr>
+                    <tr>
+                        <td>廠商名字：</td>
+                        <td>陳大明</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="identity_info_card">
+                <img src="../images/icon_card.svg" alt="">
+            </div>
+        </div>
+        <!-- 取卡異常彈窗，打開彈窗在class加on -->
+        <div id="alert" class="alert">
+            <div class="alert_box">
+                <div class="alert_txt">機台發生異常狀況</div>
+                <div class="alert_icon">
+                    <img src="../images/icon_error.svg" alt="">
+                </div>
+                <div class="alert_txt">請洽中控室協助</div>
+                <div class="alert_function">
+                    <button id="alert_home" class="normal_btn _red ">回首頁</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var alert_home = document.querySelector('#alert_home');
+        var alert = document.querySelector("#alert");
+        alert_home.onclick = function () {
+            location.href = 'index.html';
+        }
+        var time = 3;
+        var intervalId = setInterval(() => {
+            if (time !== 0) {
+                time--
+            } else {
+                clearInterval(intervalId);
+                alert.classList.add('on');
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

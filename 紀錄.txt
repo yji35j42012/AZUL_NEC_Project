@@ -2,6 +2,41 @@
 
 @Alex 施 請收，我的email：will@azul.com.tw
 
+
+
+
+
+------------------------111.12.29------------------------
+自助發卡機-物品攜入／出、還卡相關功能畫面已寄出
+
+有兩個壓縮檔案，檔名有(all)是包含以前全部的檔案壓縮
+檔名沒有(all)的是這次有修改的檔案
+
+下載連結
+https://drive.google.com/drive/folders/1wx2nrzeRcdGAPBokaZ7FebLcJQGpGQBR?usp=sharing
+
+github可進行簡單測試
+畫面對應檔案名稱可看此試算表
+https://docs.google.com/spreadsheets/d/1TSJ5A92Krl2jmSqq_j1yRk176DYd1hpx-IzOpmeWPNY/edit#gid=1232969713
+------------------------111.12.29------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------------------111.11.25------------------------
 自助發卡機-借證相關功能畫面已寄出
 因檔案內有js檔案，因此我先放在雲端提供連結下載

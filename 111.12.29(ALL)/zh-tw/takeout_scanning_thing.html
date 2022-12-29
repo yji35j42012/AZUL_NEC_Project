@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name=" viewport" content=" width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv=" X-UA-Compatible" content=" ie=edge">
+	<title>攜出掃描</title>
+	<link rel="stylesheet" href="../style/font.css">
+	<link rel="stylesheet" href="../style/reset.css">
+	<link rel="stylesheet" href="../style/index.css">
+</head>
+
+<body>
+	<div class="wrap tw">
+		<div class="head">
+			<span class="head_logo">
+				<img src="../images/logo_s.png" alt="">
+			</span>
+			<span>2022/10/12 PM 12:26</span>
+		</div>
+		<div class="info_content">
+			<ul class="step">
+				<li class="step_item ">
+					<span class="step_item_num on">1</span>
+					<span class="step_item_txt w200px">
+						掃描QR Code
+						及識別證
+					</span>
+				</li>
+				<li class="step_line"></li>
+				<li class="step_item">
+					<span class="step_item_num">2</span>
+					<span class="step_item_txt">資料確認</span>
+				</li>
+				<li class="step_line"></li>
+				<li class="step_item">
+					<span class="step_item_num">3</span>
+					<span class="step_item_txt">拍照確認</span>
+				</li>
+				<li class="step_line"></li>
+				<li class="step_item">
+					<span class="step_item_num">4</span>
+					<span class="step_item_txt">完成</span>
+				</li>
+			</ul>
+			<h2>請掃描QR Code</h2>
+			<div class="takeout_pic w443px">
+				<img src="../images/img_qrcode.svg" alt="">
+			</div>
+		</div>
+		<div class="function _jufs">
+			<button id="back" class="normal_icon_btn _prev">
+				上一步
+			</button>
+			<button id="home" class="normal_icon_btn _home">
+				回首頁
+			</button>
+            <button id="next" class="normal_icon_btn _next">
+                下一步
+            </button>
+		</div>
+		<!-- 取卡異常彈窗，打開彈窗在class加on -->
+		<div id="alert" class="alert ">
+			<div class="alert_box">
+				<div class="alert_txt">未搜尋到該放行單資料</div>
+				<div class="alert_txt">請洽中控室協助</div>
+				<div class="alert_function">
+					<button id="alert_home" class="normal_btn _red ">回首頁</button>
+					<button id="" class="normal_btn">重新掃描</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var home = document.querySelector('#home');
+		var back = document.querySelector('#back');
+		back.onclick = function () {
+			history.go(-1);
+		}
+		home.onclick = function () {
+			location.href = 'index.html';
+		}
+		var next = document.querySelector('#next');
+        next.onclick = function () {
+            location.href = 'takeout_scanning_idcard.html';
+        }
+		var alert_home = document.querySelector('#alert_home');
+		var alert = document.querySelector("#alert");
+		alert_home.onclick = function () {
+			location.href = 'index.html';
+		}
+	</script>
+</body>
+
+</html>
