@@ -7,4 +7,5 @@
             "savePath": "~../style" //放在公司專用style
         }
     ],
+    "liveServer.settings.port": 5501,
 }
