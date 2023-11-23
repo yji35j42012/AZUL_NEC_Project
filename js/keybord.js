@@ -39,9 +39,6 @@ function key_submitHandler() {
         return;
     }
     // 111.11.17新增
-
-
-    console.log("送出");
     // 如果證號在 class="input_box" 加上_error
     if (inputData.length < 9) {
         input_box.classList.add("_error");
@@ -66,7 +63,6 @@ key_clear.addEventListener("click", key_clearHandler);
 
 // 111.11.17新增
 function key_submitCompanyHandler() {
-    console.log("廠商送出");
     if (key_submit.getAttribute("data-submit") == "company_submit") {
         var checkString = new RegExp("[A-Za-z]+");
         var strcount = 0;
